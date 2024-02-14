@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axcv6afvufi6/b/Rum-JS-Public/o/elastic-apm-rum.umd.min.js" crossorigin></script>
+
+  <script>
+    elasticApm.init({
+      serviceName: 'GCC-Frontend',
+      serverUrl: 'https://apm-lean.acuative-me.com:8200',
+      environment: 'Production',
+    })
+  </script>
+
+
+    <link rel="icon" type="image/x-icon" href="/static/svg/logo-favicon-light.svg">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146902071-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-146902071-1');
+    </script>
+
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Wafid | وافد</title>
+    <meta name ="description" content="Wafid is a program under the umbrella of the Gulf Health Council that enables individuals bound to work or reside in the GCC to book their medical check-up appointments.
+    وافد هو احدى برامج مجلس الصحة الخليجي غرضه توفير مواعيد الفحص الطبي للوافدين القادمين الى دول مجلس التعاون الخليجي بغرض العمل او الإقامة.">
+    <meta name="keywords" content="Wafid, GCC, GHC, Medical center, Gulf Cooperation Council States, Medical Examinations, health check-up, appointment, medical centers accreditation, Accreditation status">
+
+
+    <!-- ISO 3166-1-alpha-2 Flags style-->
+
+
+    <link rel="stylesheet" href="/static/country-flags/image_sprite/ip2location-image-sprite.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"  crossorigin=""/>
+
+
+	
+    
+        
+
+            <link rel="stylesheet" href="/static/vendor/semantic/dist/semantic.min.css">
+            <link rel="stylesheet" href="/static/css/semantic-responsive.css">
+
+            <!-- Glide.js styles -->
+            <link rel="stylesheet" href="/static/css/vendor/glide.core.min.css">
+            <link rel="stylesheet" href="/static/css/vendor/glide.theme.min.css">
+
+            <!-- CropperJS styles -->
+            <link rel="stylesheet" href="/static/css/vendor/cropper.min.css">
+
+            <!-- Custom styles -->
+            <link rel="stylesheet" href="/static/css/main.css">
+            <link rel="stylesheet" href="/static/css/menu.css">
+            <link rel="stylesheet" href="/static/css/instant-notifications.css">
+
+            <!-- Components -->
+            <link rel="stylesheet" href="/static/css/components/breadcrumbs.css">
+            <link rel="stylesheet" href="/static/css/components/cards.css">
+            <link rel="stylesheet" href="/static/css/components/forms.css">
+            <link rel="stylesheet" href="/static/css/components/glide.css">
+            <link rel="stylesheet" href="/static/css/components/menu.css">
+            <link rel="stylesheet" href="/static/css/components/table.css">
+            <link rel="stylesheet" href="/static/css/components/message.css">
+            <link rel="stylesheet" href="/static/css/components/modal.css">
+            <link rel="stylesheet" href="/static/css/components/icons.css">
+        
+	
+    
+        <link rel="stylesheet" href="/static/css/pages/faq.css">
+    
+
+	
+</head>
+<body>
+
+	
+		<div class="ui menu basic borderless gcc-menu">
+			
+                    <div class="item">
+					<a href="/" id="gcc-header-icon-continer" class="header item brand menu-lsc-fix">
+						<img class="ui image" src="/static/svg/logo.svg">
+					</a>
+                </div>
+                    
+
+                    	
+            <div class="ui container">
+                <div class="ui grid gcc-submenu-wrapper">
+            <div class="full wide column">
+                <div class="ui menu stackable gcc-submenu">
+                    <div class="ui container centered gcc-submenu-continer width-edit">
+                        
+
+
+
+<a class=" item" href="/">Home</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        GHC accreditation-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="apply.html">Apply for accreditation </a>-->
+<!--            <a class="item"-->
+<!--               href="status.html">Check accreditation status</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Examinations
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="book-appointment.html">Book an Appointment </a>
+            <a class="item"
+               href="search-slip.html">Appointment Slips</a>
+            <a class="item"
+               href="medical-status-search.html">Medical Examination Result</a>
+        </div>
+    </div>
+
+
+
+<!--<a class=" item"-->
+<!--   href="medical-status-search.html">Health Check-Up</a>-->
+
+<!--<a class=" item"-->
+<!--   href="medical-center.html">Medical centers</a>-->
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Centers
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="medical-center.html">Wafid Medical Centers Accreditation</a>
+            <a class="item"
+               href="search.html">Medical Centers List</a>
+        </div>
+    </div>
+
+
+
+<a class=" item"
+   href="guidelines.html">Guidelines</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        Check status-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="medical-status-search.html">Check candidate status</a>-->
+<!--            <a class="item"-->
+<!--               href="certificate-search.html">Membership certeficate</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+<a class="active-item item"
+   href="1519faq.html">FAQs</a>
+<!--<a class="item" href="/static/pdf/Regulations%20of%20Medical%20Examination%20of%20Expatriates%20Coming%20to%20GCC%20States%20for%20Work%20or%20Residence.pdf"-->
+<!--   target="_blank">Rules and regulations</a>-->
+
+<a class=" item" href="4713contact-us.html">Contact Us</a>
+
+
+
+                        
+                            <a class="item mobile tablet only" href="319login.html">Login</a>
+						
+
+                        
+                            <div class="item support-phone mobile tablet only">
+                                <img src="/static/svg/headset.svg" class="support-icon">
+                                <b>
+                                    <a href="tel:+966920023560">+966920023560</a>
+                                </b>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	        
+        </div>
+
+					<div class="right menu" style="padding-right: 3%">
+						
+						
+							<div class="item tablet or lower hidden">
+								<a class="ui secondary button" id="gcc-header-login-botton" href="319login.html">Login</a>
+							</div>
+						
+
+                        <div class="mobile tablet only right menu menu-icon menu-lsc-fix">
+                            <button class="button basic" id="menubutton">
+                                <i class="bars icon"></i>
+                                <i class="x icon"></i>
+                            </button>
+                        </div>
+					</div>
+
+			
+		</div>
+	
+
+    
+    
+
+
+
+
+
+	<main class="">
+			
+
+			
+<div class="ui container content-container faq">
+    <h2 class="ui header aligned">Frequently Asked Questions</h2>
+
+    <div class="ui styled fluid accordion faq-accordion faq-border">
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">What is Wafid Program?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Wafid is a program under the umbrella of the Gulf Health Council that enables individuals bound to work or reside in the GCC to book their medical check-up appointments and ensuring that they are fit.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">List of countries under the program</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Bangladesh<br>• Egypt<br>• India<br>• Ethiopia<br>• Ghana<br>• Indonesia<br>• Jordon<br>• Kenya<br>• Lebanon<br>• Mali<br>• Morocco<br>• Nepal<br>• Nigger<br>• Pakistan<br>• Philippines<br>• Sri Lanka<br>• Sudan<br>• Tanzania<br>• Thailand<br>• Turkey<br>• Uganda</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">How to book an appointment on the website?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>To register for the medical test please follow these steps:<br>• Please Access to this link index.html/<br>• Press book an appointment button<br>• Choose the country, the city and the travelling country (the medical center will be assigned Automatically as per the city )<br>• Enter all required information and press submit (please double check all date &amp;info before Submitting)<br>• Fill the payment page, please note that the expiry date is year then month (YY MM) and make sure that all credit card are entered right, press pay Button<br>• You Get the slip for the medical exam, please visit the medical center at the earliest to do your medical examination.</p></p>
+
+<p><p>Notes:<br>1. If the nationality is Egyptian, the expatriate must enter the ID national number.<br>2. The system will not go to the next page until the number shown in the screen below is entered and marked, I agree that all information entered are correct as shown on the page below.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">How can the applicant generate his slip?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• From print GCC slip tab, please enter the passport and the nationality then press generate.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">The applicant can’t make the payment.</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>Please check the following and make sure that:<br>• there is no bank issue<br>• all credit card details are correct on the payment confirmation page and<br>• credit card is valid with enough balance<br>• the expire date is entered correctly as year then month (YYMM)<br>• Try to pay again using another card,<br>• Check the internet network or try another internet browser</p></p>
+
+<p><p>In case the issue is still actual please do the following:<br>• Please send the issue to <a href="email-protection.html" class="__cf_email__" data-cfemail="9feceaefeff0edebdfe8fef9f6fbb1fcf0f2">[email&#160;protected]</a> and provide us with passport number and screenshot for the error.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">How to know the location of the medical centers in every country &amp; city?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• From Medical Centers List Tab, please select the country and the city, all medical centers for the determined city will be displayed.<br>• You can also enter any medical center name, and the medical center details will be displayed.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">Can the applicant cancel the Slip after generating?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• For any queries regarding slip cancellations, please contact <a href="email-protection.html" class="__cf_email__" data-cfemail="6e1d1b1e1e011c1a2e190f08070a400d0103">[email&#160;protected]</a></p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">How can the applicant check the status after doing the medical examination?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• From the check candidate status tab , enter that passport number and the Nationality or the slip number</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">Can the applicant choose specific medical center?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• The applicant can’t choose the medical center since the medical center is assigned automatically as per the selected city and country.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">Can the applicant change the city after generating the slip?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Change of city is possible after the expiry of the current appointment slip, and the validity of the slip is available on the slip. <br>After that you may generate new slip with desired city.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">Within how many days a result of the medical examination appears?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• The medical examination result appears within 26 days.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">In case the applicant didn’t find his nationality or country on the system?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Please contact <a href="email-protection.html" class="__cf_email__" data-cfemail="7704020707180503370016111e135914181a">[email&#160;protected]</a> and mention the required nationality.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">From any age, the expatriate can register on the site?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• The applicant can book an appointment from any age.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">How much is the medical appointment?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• $10 per applicant for an appointment</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">How can the applicant change the wrong data?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>In case if the applicant entered wrong data like passport number, name, nationality, profession , date of birth , visa number and date , passport expiry date , passport issue date , passport issue place by the following instructions:<br>1. The applicant should Contact the medical center and ask them to submit change request as change candidate details or as change Medical exam request<br>2. Ask the medical center for the change request number and change request submission date<br>3. The change request is for free and the applicant shouldn’t pay any money for it.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">After generating the slip when should the applicant visit the medical center to do the examination?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• The applicant should visit the medical center at the e arliest, if possible, visit the medical center directly after generating the slip.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">In case the applicant paid but the slip hasn’t been generated.</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Please contact <a href="email-protection.html" class="__cf_email__" data-cfemail="bfcccacfcfd0cdcbffc8ded9d6db91dcd0d2">[email&#160;protected]</a> and provide the following document and info:<br>(Nationality / date and time of access /passport number /Name/credit Card number /card name owner/E-mail/copy of the credit card/Bank statement).</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">In case the applicant paid twice and wanted to refund the first amount?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Please contact <a href="email-protection.html" class="__cf_email__" data-cfemail="a7d4d2d7d7c8d5d3e7d0c6c1cec389c4c8ca">[email&#160;protected]</a> and provide the following document and info:<br>(Nationality / date and time of access /passport number /Name/credit Card number /card name owner/E-mail/copy of the credit card/Bank statement).</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">Can an applicant book an appointment for a medical examination from a country that differs from his nationality? For example if he is Indian but he is resident in Sudan, can he submit application to medical center in Sudan?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Yes, he can. He should select the country that he wants to do the examination in it and select his nationality</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">If an Applicant has a valid medical report on the system, when the applicant can rebook another appointment again?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>The applicant can rebook another medical appointment after 2 months.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">Can the applicant change the examination Date?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• No, the examination date can’t be changed or edited, Examination date is calculated automatically from the day the medical exam is approved.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">Can the applicant change the expiry date of the report?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• The expiry date of the report is calculated from the modified date not the examination date.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">If the system is down or unstable?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Please try another Browser.<br>• Make sure that you have stable internet network.<br>• Contact <a href="email-protection.html" class="__cf_email__" data-cfemail="2f5c5a5f5f405d5b6f584e49464b014c4042">[email&#160;protected]</a> , mention the country and provide screenshot for the error.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">What are the cases that are evaluated as unfit status?</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>Infectious Diseases:<br>1. HIV positive (AIDS)<br>2. Hepatitis (B) Surface Antsgen Poutive<br>3. Hepatitis C Antibody - postive<br>4. Microfilaria and Malaria<br>5. Leprosy<br>6. Any abnormal chest X-ray manifestations including, but not limited to:<br>a. Active on past evidence of TB<br>b. Pulmonary fibrosis and pulmonary calcification<br>c. Pleural effusion<br>d. Lymphadenopathy.</p></p>
+
+<p><p>Non-infectious diseases<br>1. Renal failure<br>2. Liver failure or hepatic insufficency<br>3. Heart failure<br>4. Uncontrolled Hypertension<br>5. Uncontrolled diabetes.<br>6. Different types of cancer.<br>7. Psychiatric and neurological disorders<br>8. Any distortion, amputation or physical disability impeding the applicant's performance.<br>9. Hemoglobin below 79/100di.</p></p></p>
+            </div>
+        </div>
+        
+        <div class="ui card faq-card">
+            <div class="title" id="faq-content">
+                <div class="title-text">In case the applicant faces any technical issues</div>
+                <img class="right floated faq-card-img" id="faq-content-icon" name="faq-card-img" src="/static/svg/postive_icon.svg">
+            </div>
+            <div class="content">
+                <p class="transition hidden"><p><p>• Please contact <a href="email-protection.html" class="__cf_email__" data-cfemail="6b181e1b1b04191f2b1c0a0d020f45080406">[email&#160;protected]</a> and provide in the email screenshots.</p></p></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                var faq_dropdown_func = function(evt) {
+                    if(evt.currentTarget.className=="title active"){
+                        evt.currentTarget.myParm.children.namedItem("faq-card-img").src="/static/svg/postive_icon.svg"
+                    }else{
+                        evt.currentTarget.myParm.children.namedItem("faq-card-img").src="/static/svg/min_icon.svg";
+                    }
+                };
+
+                var elements = document.getElementsByClassName('title');
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].addEventListener('click', faq_dropdown_func, false);
+                    elements[i].myParm=elements[i]
+                }
+
+    </script>
+
+</div>
+
+	</main>
+
+
+
+	<div class="ui vertical basic segment footer">
+		<div class="ui container center aligned">
+            <div class="ui container center aligned">
+                <img class="footer-logo" src="/static/svg/gcc-old-logo-white.svg" alt="gulf health council logo">
+            <div class="social-media-icons" >
+                <a href="https://www.instagram.com/ghc_gcc/channel/?hl=en"><img class="social-media-icons-colors"  src="/static/svg/instagram.svg" alt="instagram"></a>
+                <a href=" https://ar-ar.facebook.com/GHCouncil/"><img class="social-media-icons-colors"  src="/static/svg/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/ghc_gcc"><img class="social-media-icons-colors"  src="/static/svg/twitter.svg" alt="twitter"></a>
+                <a href="https://www.youtube.com/channel/UCrKbHYpmpC_OrAfZ5P_qZXA"><img class="social-media-icons-colors"  src="/static/svg/youtube.svg" alt="youtube"></a>
+            </div>
+			<div class="copyright">
+                <div class="copyright">
+                    <span>@ 2024 </span>
+                    Gulf Health Council. All rights reserved
+                </div>
+			
+		</div>
+	</div>
+
+
+    
+
+<script src="/static/jsi18n/en/djangojs.js"></script>
+
+    <script src="/static/vendor/jquery.min.js"></script>
+    <script src="/static/vendor/semantic/dist/semantic.min.js"></script>
+    <script src="/static/js/vendor/jquery.inputmask.min.js"></script>
+    <script src="/static/js/vendor/cropper.min.js"></script>
+    <script src="/static/js/vendor/jquery-cropper.min.js"></script>
+    <script src="/static/js/vendor/glide.min.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/table-config.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.ui.dropdown').dropdown();
+        $('.ui.dropdown.item').dropdown({on: 'hover'});
+        $('.ui.checkbox').checkbox();
+        $('.message .close')
+          .on('click', function() {
+            $(this)
+              .closest('.message')
+              .transition('fade');
+          });
+      });
+    </script>
+
+    <!-- start forms and widgets-specific -->
+    <script src="/static/vendor/semantic-ui-calendar/calendar.min.js"></script>
+    <script src="/static/vendor/semantic/dist/components/dropdown.js"></script>
+    <script src="/static/vendor/state-machine/state-machine.min.js"></script>
+    <script src="/static/js/calendar-widget.js"></script>
+    <script src="/static/js/vendor/moment.js"></script>
+    <script src="/static/js/components/single-dropdown-widget.js"></script>
+    <script src="/static/js/components/multiple-dropdown-widget.js"></script>
+    <script src="/static/js/captcha.js"></script>
+    <script src="/static/js/components/file-widget.js"></script>
+    <script src="/static/js/components/number-input-widget.js"></script>
+    <script src="/static/js/components/labeled-select-widget.js"></script>
+    <script src="/static/js/city-country-controls.js"></script>
+
+    <!-- end forms and widgets-specific -->
+
+
+
+    
+    <script>
+        $('.faq-card').accordion();
+    </script>
+
+</body>
+</html>

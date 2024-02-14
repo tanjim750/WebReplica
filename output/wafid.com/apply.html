@@ -1,0 +1,1751 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axcv6afvufi6/b/Rum-JS-Public/o/elastic-apm-rum.umd.min.js" crossorigin></script>
+
+  <script>
+    elasticApm.init({
+      serviceName: 'GCC-Frontend',
+      serverUrl: 'https://apm-lean.acuative-me.com:8200',
+      environment: 'Production',
+    })
+  </script>
+
+
+    <link rel="icon" type="image/x-icon" href="/static/svg/logo-favicon-light.svg">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146902071-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-146902071-1');
+    </script>
+
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Wafid | وافد</title>
+    <meta name ="description" content="Wafid is a program under the umbrella of the Gulf Health Council that enables individuals bound to work or reside in the GCC to book their medical check-up appointments.
+    وافد هو احدى برامج مجلس الصحة الخليجي غرضه توفير مواعيد الفحص الطبي للوافدين القادمين الى دول مجلس التعاون الخليجي بغرض العمل او الإقامة.">
+    <meta name="keywords" content="Wafid, GCC, GHC, Medical center, Gulf Cooperation Council States, Medical Examinations, health check-up, appointment, medical centers accreditation, Accreditation status">
+
+
+    <!-- ISO 3166-1-alpha-2 Flags style-->
+
+
+    <link rel="stylesheet" href="/static/country-flags/image_sprite/ip2location-image-sprite.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"  crossorigin=""/>
+
+
+	
+    
+        
+
+            <link rel="stylesheet" href="/static/vendor/semantic/dist/semantic.min.css">
+            <link rel="stylesheet" href="/static/css/semantic-responsive.css">
+
+            <!-- Glide.js styles -->
+            <link rel="stylesheet" href="/static/css/vendor/glide.core.min.css">
+            <link rel="stylesheet" href="/static/css/vendor/glide.theme.min.css">
+
+            <!-- CropperJS styles -->
+            <link rel="stylesheet" href="/static/css/vendor/cropper.min.css">
+
+            <!-- Custom styles -->
+            <link rel="stylesheet" href="/static/css/main.css">
+            <link rel="stylesheet" href="/static/css/menu.css">
+            <link rel="stylesheet" href="/static/css/instant-notifications.css">
+
+            <!-- Components -->
+            <link rel="stylesheet" href="/static/css/components/breadcrumbs.css">
+            <link rel="stylesheet" href="/static/css/components/cards.css">
+            <link rel="stylesheet" href="/static/css/components/forms.css">
+            <link rel="stylesheet" href="/static/css/components/glide.css">
+            <link rel="stylesheet" href="/static/css/components/menu.css">
+            <link rel="stylesheet" href="/static/css/components/table.css">
+            <link rel="stylesheet" href="/static/css/components/message.css">
+            <link rel="stylesheet" href="/static/css/components/modal.css">
+            <link rel="stylesheet" href="/static/css/components/icons.css">
+        
+	
+    
+        <link rel="stylesheet" href="/static/css/pages/accreditation-request.css">
+    
+
+	
+</head>
+<body>
+
+	
+		<div class="ui menu basic borderless gcc-menu">
+			
+                    <div class="item">
+					<a href="/" id="gcc-header-icon-continer" class="header item brand menu-lsc-fix">
+						<img class="ui image" src="/static/svg/logo.svg">
+					</a>
+                </div>
+                    
+
+                    	
+            <div class="ui container">
+                <div class="ui grid gcc-submenu-wrapper">
+            <div class="full wide column">
+                <div class="ui menu stackable gcc-submenu">
+                    <div class="ui container centered gcc-submenu-continer width-edit">
+                        
+
+
+
+<a class=" item" href="/">Home</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item active-item">-->
+<!--        GHC accreditation-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="apply.html">Apply for accreditation </a>-->
+<!--            <a class="item"-->
+<!--               href="status.html">Check accreditation status</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Examinations
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="book-appointment.html">Book an Appointment </a>
+            <a class="item"
+               href="search-slip.html">Appointment Slips</a>
+            <a class="item"
+               href="medical-status-search.html">Medical Examination Result</a>
+        </div>
+    </div>
+
+
+
+<!--<a class=" item"-->
+<!--   href="medical-status-search.html">Health Check-Up</a>-->
+
+<!--<a class=" item"-->
+<!--   href="medical-center.html">Medical centers</a>-->
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Centers
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="medical-center.html">Wafid Medical Centers Accreditation</a>
+            <a class="item"
+               href="search.html">Medical Centers List</a>
+        </div>
+    </div>
+
+
+
+<a class=" item"
+   href="guidelines.html">Guidelines</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        Check status-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="medical-status-search.html">Check candidate status</a>-->
+<!--            <a class="item"-->
+<!--               href="certificate-search.html">Membership certeficate</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+<a class=" item"
+   href="faq.html">FAQs</a>
+<!--<a class="item" href="/static/pdf/Regulations%20of%20Medical%20Examination%20of%20Expatriates%20Coming%20to%20GCC%20States%20for%20Work%20or%20Residence.pdf"-->
+<!--   target="_blank">Rules and regulations</a>-->
+
+<a class=" item" href="contact-us.html">Contact Us</a>
+
+
+
+                        
+                            <a class="item mobile tablet only" href="login.html">Login</a>
+						
+
+                        
+                            <div class="item support-phone mobile tablet only">
+                                <img src="/static/svg/headset.svg" class="support-icon">
+                                <b>
+                                    <a href="tel:+966920023560">+966920023560</a>
+                                </b>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	        
+        </div>
+
+					<div class="right menu" style="padding-right: 3%">
+						
+						
+							<div class="item tablet or lower hidden">
+								<a class="ui secondary button" id="gcc-header-login-botton" href="login.html">Login</a>
+							</div>
+						
+
+                        <div class="mobile tablet only right menu menu-icon menu-lsc-fix">
+                            <button class="button basic" id="menubutton">
+                                <i class="bars icon"></i>
+                                <i class="x icon"></i>
+                            </button>
+                        </div>
+					</div>
+
+			
+		</div>
+	
+
+    
+    
+
+
+
+
+
+	<main class="">
+			
+
+			
+    <div class="ui container content-container">
+
+        
+
+        <div class="ui grid">
+            <div class="four wide column">
+                <div class="ui vertical fluid tabular menu">
+                    
+                        
+                            <div class=" item active">
+                                1 - Medical center information
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                2 - Staff Capacity
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                3 - Scope of Services
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                4 - Mandatory Requirements
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                5 - Element 1 - Governance and Management
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                6 - Element 2 - Facility Management
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                7 - Element 3 - Clinical Examination
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                8 - Element 4 - Sample Collection Room
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                9 - Element 5 - Laboratory
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                10 - Element 6 - Radiology Services
+                            </div>
+                        
+                    
+                        
+                            <div class=" item ">
+                                11 - Element 7 - Vaccination Services
+                            </div>
+                        
+                    
+                </div>
+            </div>
+            <div class="twelve wide stretched column">
+                <div class="ui segment">
+                    <form class="ui form " id="accreditation-request-form"
+                          method="post" enctype="multipart/form-data" novalidate autocomplete="off">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="jhR2nQbFy6crhOhlD1SY4ZQbtAtFyURQqx1SiqcC4BUGQEln9MERnB7FtZRZHlOf">
+                        
+                        
+                        <input type="submit" style="display: none">
+
+                        <div class="form-fields-container">
+                            <h3 class="ui header">
+                                <div class="content md-header">Medical center information</div>
+                            </h3>
+                            <div class="ui stackable two column grid mobile reversed">
+                                <div class="thirteen wide column">
+                                    <div class="field">
+                                        <div class="two fields">
+                                            <div class="field disabled">
+                                                
+                                                
+<div class="field " >
+	
+		<label>
+			Medical center name
+			
+		</label>
+	
+
+	
+		<input type="text" name="name" maxlength="256" required id="id_name">
+	
+	
+	
+		
+	
+</div>
+
+                                            </div>
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Web site
+			
+		</label>
+	
+
+	
+		<input type="url" name="web_site" maxlength="256" id="id_web_site">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="two fields">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			License Number
+			
+		</label>
+	
+
+	
+		<input type="text" name="license_number" maxlength="25" required id="id_license_number">
+	
+	
+	
+		
+	
+</div>
+
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			License issue date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="license_issue_date" placeholder="Select Date" required id="id_license_issue_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			License expiry date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="license_expiry_date" placeholder="Select Date" required id="id_license_expiry_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                    <div class="field">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Copy of Valid License
+			
+		</label>
+	
+
+	
+		<div class="ui grid file-widget">
+    
+        <div class="ten wide column">
+            <input type="file" name="authority_licence_attachment" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach license" id="id_authority_licence_attachment" hidden>
+            <div class="ui icon input">
+                
+                    <i class="trash alternate outline icon link clear_attachment"></i>
+                
+                <input type="text" name="authority_licence_attachment_text" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach license" id="id_authority_licence_attachment" readonly>
+            </div>
+        </div>
+        <div class="six wide column">
+            
+                <div class="ui left labeled secondary large basic icon button upload-btn">
+                    Attach license
+                    <i class="paperclip icon"></i>
+                </div>
+            
+        </div>
+    
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                    <div class="field">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Additional Attachments
+			
+		</label>
+	
+
+	
+		<div class="ui grid file-widget">
+    
+        <div class="ten wide column">
+            <input type="file" name="additional_attachments" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach attachment" id="id_additional_attachments" hidden>
+            <div class="ui icon input">
+                
+                    <i class="trash alternate outline icon link clear_attachment"></i>
+                
+                <input type="text" name="additional_attachments_text" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach attachment" id="id_additional_attachments" readonly>
+            </div>
+        </div>
+        <div class="six wide column">
+            
+                <div class="ui left labeled secondary large basic icon button upload-btn">
+                    Attach attachment
+                    <i class="paperclip icon"></i>
+                </div>
+            
+        </div>
+    
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                    <div class="field">
+                                        <div class="two fields disabled">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Country
+			
+		</label>
+	
+
+	
+		<select name="country" required id="id_country">
+  <option value="" selected>Select your country</option>
+
+  <option value="ACT">India</option>
+
+  <option value="PAK">Pakistan</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			City
+			
+		</label>
+	
+
+	
+		<select name="city" required id="id_city">
+  <option value="" selected>Select your city</option>
+
+  <option value="94">---</option>
+
+  <option value="96">---</option>
+
+  <option value="2018">---</option>
+
+  <option value="115">Abu Dhabi</option>
+
+  <option value="156">Abuja</option>
+
+  <option value="141">Accra</option>
+
+  <option value="2">Adama</option>
+
+  <option value="121">Addis Ababa</option>
+
+  <option value="60">Ahmedabad</option>
+
+  <option value="119">Aleppo</option>
+
+  <option value="120">Alexandria</option>
+
+  <option value="2036">Algiers</option>
+
+  <option value="148">Amman</option>
+
+  <option value="167">Ankara</option>
+
+  <option value="2012">Antakya</option>
+
+  <option value="146">Antananarivo</option>
+
+  <option value="2023">Anuradhapura</option>
+
+  <option value="160">Asmara</option>
+
+  <option value="104">Bacolod</option>
+
+  <option value="2050">Baghdad</option>
+
+  <option value="163">Bamako</option>
+
+  <option value="61">Bangalore</option>
+
+  <option value="162">Bangkok</option>
+
+  <option value="2031">Barishal</option>
+
+  <option value="151">Beijing</option>
+
+  <option value="149">Beirut</option>
+
+  <option value="155">Bujumbura</option>
+
+  <option value="87">Cairo</option>
+
+  <option value="93">Calicut</option>
+
+  <option value="152">Casablanca</option>
+
+  <option value="79">Cebu</option>
+
+  <option value="64">Chennai</option>
+
+  <option value="81">Chitagong</option>
+
+  <option value="117">Cochin</option>
+
+  <option value="2019">Coimbatore</option>
+
+  <option value="84">Colombo</option>
+
+  <option value="166">Conakry</option>
+
+  <option value="2033">Cox&#x27;s Bazar</option>
+
+  <option value="2032">Cumilla</option>
+
+  <option value="118">Damascus</option>
+
+  <option value="168">Dar es Salaam</option>
+
+  <option value="105">Davao</option>
+
+  <option value="1002">Delhi</option>
+
+  <option value="80">Dhaka</option>
+
+  <option value="137">dimo</option>
+
+  <option value="2013">Diyarbakir</option>
+
+  <option value="113">Doha</option>
+
+  <option value="2044">Eldoret</option>
+
+  <option value="165">Freetown</option>
+
+  <option value="2011">Gaziantap</option>
+
+  <option value="2037">Gitega</option>
+
+  <option value="132">Goa</option>
+
+  <option value="2015">Gorakhpur</option>
+
+  <option value="91">Gujranwala</option>
+
+  <option value="2055">Gwadar</option>
+
+  <option value="159">Hanoi</option>
+
+  <option value="2034">Ho Chi Minh</option>
+
+  <option value="134">Hubli</option>
+
+  <option value="67">Hyderabad</option>
+
+  <option value="144">Iloilo</option>
+
+  <option value="2026">Indore</option>
+
+  <option value="2051">Irbid</option>
+
+  <option value="73">Islamabad</option>
+
+  <option value="169">Istanbul</option>
+
+  <option value="2014">Izmir</option>
+
+  <option value="68">Jaipur</option>
+
+  <option value="86">Jakarta Selatan</option>
+
+  <option value="2048">Kabul</option>
+
+  <option value="2045">Kakamega</option>
+
+  <option value="145">Kampala</option>
+
+  <option value="2024">Kandy</option>
+
+  <option value="74">Karachi</option>
+
+  <option value="89">Kathmandu</option>
+
+  <option value="109">Khartoum</option>
+
+  <option value="2058">Khuzdar</option>
+
+  <option value="2042">Kisumu</option>
+
+  <option value="65">Kochi</option>
+
+  <option value="133">Kolkata</option>
+
+  <option value="85">Kurunegala</option>
+
+  <option value="2020">Kutch</option>
+
+  <option value="111">Kuwait</option>
+
+  <option value="2054">Lagos state</option>
+
+  <option value="75">Lahore</option>
+
+  <option value="62">Lucknow</option>
+
+  <option value="2046">Machakos</option>
+
+  <option value="2027">Madurai</option>
+
+  <option value="2053">Makamba</option>
+
+  <option value="100">Makati</option>
+
+  <option value="98">Malang</option>
+
+  <option value="99">Malappuram</option>
+
+  <option value="110">manama</option>
+
+  <option value="102">Mandaluyong</option>
+
+  <option value="143">Mandaue</option>
+
+  <option value="59">Mangalore</option>
+
+  <option value="78">Manila</option>
+
+  <option value="97">Manjeri</option>
+
+  <option value="107">Margoa</option>
+
+  <option value="153">Marrakech</option>
+
+  <option value="131">Matram</option>
+
+  <option value="150">Mindanao</option>
+
+  <option value="2040">Mogadishu</option>
+
+  <option value="2041">Mombasa</option>
+
+  <option value="76">Multan</option>
+
+  <option value="63">Mumbai</option>
+
+  <option value="112">muscat</option>
+
+  <option value="140">Nairobi</option>
+
+  <option value="2043">Nakuru</option>
+
+  <option value="2038">N&#x27;Djamena</option>
+
+  <option value="66">New Delhi</option>
+
+  <option value="164">Niamey</option>
+
+  <option value="2039">Nouakchott</option>
+
+  <option value="157">Ouagadougou</option>
+
+  <option value="2057">Panjgur</option>
+
+  <option value="108">Panjim</option>
+
+  <option value="2021">Patna</option>
+
+  <option value="77">Peshawar</option>
+
+  <option value="2035">Pretoria</option>
+
+  <option value="2017">Punjab</option>
+
+  <option value="92">Quetta</option>
+
+  <option value="103">Quezon</option>
+
+  <option value="147">Rabat</option>
+
+  <option value="2030">Rajshahi</option>
+
+  <option value="90">Rawalpindi</option>
+
+  <option value="6">Riyadh</option>
+
+  <option value="2049">Sana&#x27;a</option>
+
+  <option value="114">sanna</option>
+
+  <option value="2059">Sherpur</option>
+
+  <option value="2052">SHOUQ</option>
+
+  <option value="2025">Sialkot</option>
+
+  <option value="95">Surabaya</option>
+
+  <option value="83">Sylhet</option>
+
+  <option value="154">Tangier</option>
+
+  <option value="72">Thalakkadathur</option>
+
+  <option value="101">Tirur</option>
+
+  <option value="70">Trichy</option>
+
+  <option value="82">Tripureshwor</option>
+
+  <option value="69">Triuvananthapuram</option>
+
+  <option value="161">Tunis</option>
+
+  <option value="2056">Turbat</option>
+
+  <option value="2028">Visakhapatnam</option>
+
+  <option value="158">Yamoussoukro</option>
+
+  <option value="2047">Yaounde</option>
+
+  <option value="142">Zamboanga</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label>Medical Facility Location</label>
+                                        <p style="font-size: 12px; font-style: italic; color: #7E7E7E;">Move to Medical
+                                            Facility Location</p>
+                                        <div class="field">
+                                            <div id="map" style="height: 400px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="two fields">
+                                            
+<div class="field " >
+	
+
+	
+		<input type="hidden" name="latitude" id="id_latitude">
+	
+	
+	
+		
+	
+</div>
+
+                                            
+<div class="field " >
+	
+
+	
+		<input type="hidden" name="longitude" id="id_longitude">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="two fields">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Address line 1
+			
+		</label>
+	
+
+	
+		<input type="text" name="address" maxlength="256" required id="id_address">
+	
+	
+	
+		
+	
+</div>
+
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Address line 2
+			
+		</label>
+	
+
+	
+		<input type="text" name="address_2" maxlength="256" id="id_address_2">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="two fields">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			State
+			
+		</label>
+	
+
+	
+		<input type="text" name="state" maxlength="50" id="id_state">
+	
+	
+	
+		
+	
+</div>
+
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Zip code
+			
+		</label>
+	
+
+	
+		<input type="text" name="zip_code" maxlength="24" required id="id_zip_code">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="two fields">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Phone №
+			
+		</label>
+	
+
+	
+		<input type="text" name="phone" class="phone" maxlength="14" required id="id_phone">
+	
+	
+	
+		
+	
+</div>
+
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Fax №
+			
+		</label>
+	
+
+	
+		<input type="text" name="fax" class="phone" maxlength="14" required id="id_fax">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="three wide column">
+                                    
+<div class="field " >
+	
+
+	
+		<div class="preview-image-widget-wrapper  ">
+	<input type="file" name="logo" accept="gif, jpg, png, bmp" upload_icon="paperclip" upload_label="Attach logo" id="id_logo" hidden>
+	<input type="hidden" name="logo_cropped" id="id_logo_cropped" value="">
+	<div class="ui dropdown image-dropdown">
+		<div class="preview-image-widget" >
+			
+				<div class="center aligned image-placeholder preview-image-placeholder" >
+					<i class="paperclip icon"></i>
+					<div>Attach logo</div>
+				</div>
+				<div class="center aligned image-placeholder change-image-placeholder" style="display: none;">
+					<i class="camera icon"></i>
+					<div>Change photo</div>
+				</div>
+			
+		</div>
+
+		<div class="menu">
+			<div class="item upload-image">Upload image</div>
+			
+				<div class="item remove-image">Remove image</div>
+			
+		</div>
+	</div>
+
+	
+		<div class="clear-image-field">
+			<label for="logo-clear_id">remove</label>
+			<input type="checkbox" name="logo-clear" id="logo-clear_id">
+		</div>
+	
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                </div>
+                            </div>
+
+
+                            <h3 class="ui header">
+                                <div class="content md-header">Medical Center Owner</div>
+                            </h3>
+                            <div class="ui stackable two column grid">
+
+                                <div class="thirteen wide column">
+
+                                    <div class="field">
+                                        <div class="two fields">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			First name
+			
+		</label>
+	
+
+	
+		<input type="text" name="first_name_for_candidates" maxlength="30" placeholder="First name" required id="id_first_name_for_candidates">
+	
+	
+	
+		
+	
+</div>
+
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Last name
+			
+		</label>
+	
+
+	
+		<input type="text" name="last_name_for_candidates" maxlength="30" placeholder="Last name" required id="id_last_name_for_candidates">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+
+                                        <div class="field">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Copy of Educational Qualification
+			
+		</label>
+	
+
+	
+		<div class="ui grid file-widget">
+    
+        <div class="ten wide column">
+            <input type="file" name="educational_qualification_attachments" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach Qualification" required id="id_educational_qualification_attachments" hidden>
+            <div class="ui icon input">
+                
+                    <i class="trash alternate outline icon link clear_attachment"></i>
+                
+                <input type="text" name="educational_qualification_attachments_text" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach Qualification" required id="id_educational_qualification_attachments" readonly>
+            </div>
+        </div>
+        <div class="six wide column">
+            
+                <div class="ui left labeled secondary large basic icon button upload-btn">
+                    Attach Qualification
+                    <i class="paperclip icon"></i>
+                </div>
+            
+        </div>
+    
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                        <div class="field">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Copy of the criminal record certificate
+			
+		</label>
+	
+
+	
+		<div class="ui grid file-widget">
+    
+        <div class="ten wide column">
+            <input type="file" name="criminal_record_certificate" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach certificate" required id="id_criminal_record_certificate" hidden>
+            <div class="ui icon input">
+                
+                    <i class="trash alternate outline icon link clear_attachment"></i>
+                
+                <input type="text" name="criminal_record_certificate_text" accept="gif, jpeg, jpg, bmp, png, jpg, pdf, doc, docx" upload_icon="paperclip" upload_label="Attach certificate" required id="id_criminal_record_certificate" readonly>
+            </div>
+        </div>
+        <div class="six wide column">
+            
+                <div class="ui left labeled secondary large basic icon button upload-btn">
+                    Attach certificate
+                    <i class="paperclip icon"></i>
+                </div>
+            
+        </div>
+    
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                        <div class="field">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Owner Passport Number
+			
+		</label>
+	
+
+	
+		<input type="text" name="owner_passport_number" required id="id_owner_passport_number">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                        <h3 class="ui header">
+                                            <div class="content md-header">Authorized Body Details (To be used as the PoC for GHC)</div>
+                                        </h3>
+                                        <div class="field">
+                                            <div class="two fields disabled">
+                                                
+                                                
+<div class="field " >
+	
+		<label>
+			First name
+			
+		</label>
+	
+
+	
+		<input type="text" name="first_name_for_ghc" maxlength="30" placeholder="First name" required id="id_first_name_for_ghc">
+	
+	
+	
+		
+	
+</div>
+
+                                                
+                                                
+<div class="field " >
+	
+		<label>
+			Last name
+			
+		</label>
+	
+
+	
+		<input type="text" name="last_name_for_ghc" maxlength="30" placeholder="Last name" required id="id_last_name_for_ghc">
+	
+	
+	
+		
+	
+</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="field disabled">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Designation
+			
+		</label>
+	
+
+	
+		<input type="text" name="designation_for_ghc" maxlength="50" id="id_designation_for_ghc">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                        <div class="field">
+                                            <div class="two fields">
+                                                
+                                                
+<div class="field " >
+	
+		<label>
+			Phone №
+			
+		</label>
+	
+
+	
+		<input type="text" name="phone_for_ghc" class="phone" maxlength="14" required id="id_phone_for_ghc">
+	
+	
+	
+		
+	
+</div>
+
+
+                                                
+                                                
+<div class="field " >
+	
+		<label>
+			Mobile №
+			
+		</label>
+	
+
+	
+		<input type="text" name="mobile_for_ghc" class="phone" maxlength="14" id="id_mobile_for_ghc">
+	
+	
+	
+		
+	
+</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="field">
+                                                
+                                                
+<div class="field " >
+	
+		<label>
+			Email
+			
+		</label>
+	
+
+	
+		<input type="email" name="email_for_ghc" maxlength="254" placeholder="your@mail.com" required id="id_email_for_ghc">
+	
+	
+	
+		
+	
+</div>
+
+                                                <div class="emailErrorMessage"></div>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="ui header">
+                                            <div class="content md-header">Declaration</div>
+                                        </h3>
+                                        <p>&nbsp;</p>
+                                        <div class="one field">
+                                            
+                                            
+<div class="field ui checkbox license-checkbox inline reverse" >
+	
+		<label>
+			I have a medical center authority license (translated to English)
+			
+		</label>
+	
+
+	
+		<input type="checkbox" name="authority_licence" required id="id_authority_licence">
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+                                        <div class="one field">
+                                            
+                                            
+                                                
+<div class="field ui checkbox accept-checkbox inline reverse" >
+	
+		<label>
+			I accept the rules and regulations of medical examination of expatriates coming to GCC state for residence (<a href="#" id="view-license-agreement">View</a>)
+			
+		</label>
+	
+
+	
+		<input type="checkbox" name="accept_rules" required id="id_accept_rules">
+	
+	
+	
+		
+	
+</div>
+
+                                            
+                                        </div>
+
+
+                                        <h3 class="ui header">
+                                            <div class="content md-header">Facility Category</div>
+                                        </h3>
+                                        <div class="two fields">
+                                            
+                                            
+<div class="field " >
+	
+		<label>
+			Facility Category
+			
+		</label>
+	
+
+	
+		<select name="facility_category" id="id_facility_category">
+  <option value="hospital">Hospital</option>
+
+  <option value="clinic">Clinic</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                                        </div>
+
+                                        <div class="two fields">
+                                            <script src="https://www.google.com/recaptcha/api.js?render=6LflPAwnAAAAAL2wBGi6tSyGUyj-xFvftINOR9xp"></script>
+<script type="text/javascript">
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LflPAwnAAAAAL2wBGi6tSyGUyj-xFvftINOR9xp', {action: 'form'})
+        .then(function(token) {
+            console.log("reCAPTCHA validated for 'data-widget-uuid=\"e6cc2dc0c9ad4bc8be939dc4c0fd9c5c\"'. Setting input value...")
+            var element = document.querySelector('.g-recaptcha[data-widget-uuid="e6cc2dc0c9ad4bc8be939dc4c0fd9c5c"]');
+            element.value = token;
+        });
+    });
+</script>
+
+<input class="g-recaptcha"
+    type="hidden"
+    name="captcha"
+     required_score="0.6" data-sitekey="6LflPAwnAAAAAL2wBGi6tSyGUyj-xFvftINOR9xp" required id="id_captcha" data-widget-uuid="e6cc2dc0c9ad4bc8be939dc4c0fd9c5c" data-callback="onSubmit_e6cc2dc0c9ad4bc8be939dc4c0fd9c5c" data-size="normal"
+>
+                                            
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-buttons-container">
+                                <div class="ui centered grid">
+                                    <div class="seven wide mobile nine wide computer seven wide tablet column mobile hidden"></div>
+                                    <div class="nine wide mobile seven wide computer nine wide tablet column">
+                                        <div class="ui stackable two column grid mobile reversed">
+                                            <div class="eight wide column">
+                                                <a class="ui secondary large  fluid button"
+                                                   href="/">Cancel</a>
+                                            </div>
+                                            <div class="eight wide column">
+                                                <button class="ui primary large submit fluid button small-side-paddings"
+                                                        type="button" onclick="saveContinue()">
+                                                    Save and continue
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+<div class="ui modal" id="cropper-modal">
+	<div class="content">
+		<div>
+			<img class="ui image center aligned" src="" id="image-crop">
+		</div>
+	</div>
+	<div class="actions">
+		<div class="ui cancel secondary medium basic button">Cancel</div>
+		<div class="ui button primary medium" id="crop-btn"><i class="save outline icon"></i>Save image</div>
+	</div>
+</div>
+
+
+<div class="ui modal" id="remove-modal">
+	<div class="content">
+		<h3>Are you sure you want to remove your photo?</h3>
+	</div>
+	<div class="actions">
+		<div class="ui cancel secondary medium basic button">Cancel</div>
+		<div class="negative ui button medium" id="remove-btn">Yes, remove photo</div>
+	</div>
+</div>
+
+    
+
+
+<div class="ui longer modal gcc-modal accept-la">
+    <div class="header">
+        <div class="header__logo"><img class="ui image "src="/static/svg/logo-gcc-slip.svg"></div>
+        <div class="header__text ">
+            <div class="eng-and-arab-texts">
+                <div class="eng">
+                    Acknowledgment and Undertaking
+                </div>
+                &nbsp;-&nbsp;
+                <div class="arab">
+                    إقرار و تعهُّد 
+                </div>
+            </div>
+        </div>
+        <div class="header__logo"><img class="ui image" src="/static/img/gcc-logo-white.png" style="margin-left: 8%"></div>
+    </div>
+    <div class="scrolling content">
+        <div class="ui grid">
+            <div class="eight wide column licence-agreement-column">
+                <p><p>1- By clicking on "I agree" or using our online services, you agree to the content of this website and to the rules and regulations for medical examination of expatriates coming to GCC states for residence via the Internet ("the regulations"), and this is legally binding on you as you have read and understood all the policies, terms and conditions of the website or the way it is used in addition to the regulations, the word "center" refers to you as an accredited medical center, and the word "council" refers to the Gulf health council of the Gulf Cooperation Council.<br>2- The Council aims to establish appropriate health measures to ensure the health safety and security of the Gulf Society by preventing communicable diseases that might be carried from expatriates to the GCC, and to ensure that they are healthy and fit to work and live in the GCC States by using the Electronic System for expatriates’ medical examination. You will pay the fees to the council. Note that all amounts that are paid for the benefit of the Council are not refundable.<br>3- The Center undertakes that it is licensed in accordance with the requirements applied in its country and that its license is valid without any restrictions during the period of cooperation with the Council, and it is responsible for the validity of the information that it is obligated to provide through the electronic system specified for that and only for it, along with its commitment to apply all the duties and tasks described in Chapter eight of the regulations, and obliged to notify the council immediately of any defect that might affect its obligations to the council or any problem related to licensing. As a result of its cancellation, withdrawal or suspension, the Center shall provide licenses upon renewal, given that any violations committed by the center apply the penalties stipulated in the penalty regulations attached to the regulations.<br>4- The Council reserves the right to amend the regulations, and the amended regulations become effective automatically immediately after its preliminary publication on this system, and your use of the system after publishing the amended regulations on the system is a positive confirmation from you of the following: (a) your approval of the regulations and any amendments to it, and (b) consent to be bound by the regulations after the amendment.<br>5- The system and all the contents of the text, images, marks, logos and other contents of the system (“system contents”) are the property of the council or other parties from which we obtained permission or license and the council is not responsible for any malfunction of the electronic system and there is no liability whatsoever towards the Center.<br>6- The system may be modified or stopped at any time without prior notice and we are not obligated to support or update the system. We reserve the right to limit or stop access to the system at any time, publicly or privately, for any reason related to the Council alone.<br>7- The Council can use your information, and The Center recognizes that all information in the system is owned by the program and the Council, as we reserve the right to: (1) monitor and / or record all communications and activities related to services and (2) request verification of all required transfers and payment operations as we deem appropriate.<br>8- In the event that we violate or breach any of the conditions, or obligations stipulated in this commitment or the associated appendices or the applicable laws and regulations with the Health Council or the decline of our services provided to the Health Council, we acknowledge the right of the Health Council to take whatever sanctions it deems necessary, including canceling Accrediting of the center, and we acknowledge that assessing the level of services provided by the center and estimating the center’s commitment to that commitment and the council’s rules, regulations, and decisions are due to the Gulf health council of the Gulf Cooperation Council.<br>9- We acknowledge the validity of the data, information and addresses submitted to the council, that all correspondence between the center and the council takes place through the system and the official email registered to the center with the council, and that every letter of notification or email notification  sent through methods is tantamount to acknowledgment of receipt and has all its legal effects.</p></p>
+            </div>
+            <div class="eight wide column licence-agreement-column right aligned rtl">
+                <p><p>1-  عن طريق النقر على "أوافق" أو استخدام خدماتنا عبر الإنترنت، فإنك توافق على محتوى هذا الموقع الالكتروني وعلى اللائحة التنظيمية للكشف الطبي للوافدين إلى دول مجلس التعاون عبر الإنترنت ("الائحة") ويعد ذلك ملزماً لك من الناحية القانونية باعتبار أنك قرأت واطلعت وفهمت كافة السياسات والشروط والأحكام الخاصة بالموقع أو بطريقة استخدامه إضافة إلى اللائحة، وتشير كلمة "المركز" إليك كمركز صحة معتمد، كما تشير كلمة "المجلس" إلى مجلس الصحة لدول مجلس التعاون. <br>2- يستهدف المجلس اتخاذ الإجراءات الصحية المناسبة للتأكد من خلو الوافدين من الأمراض التي تشكل خطراً على مخالطيها بما يهدد أمن وسلامة المجتمع الخليجي، والتأكد من اللياقة الصحية للوافدين بغرض العمل أو الإقامة، ويتم ذلك من خلال النظام الالكتروني لفحص الوافدين. وستقوم أنت بسداد الرسوم   إلى المجلس علماً أن جميع المبالغ المدفوعة لصالح المجلس هي غير قابلة للاسترداد.<br>3- يتعهَّد المركز بأنه مُرخص وفقاً للاشتراطات المُطبَّقة في دولته وأن ترخيصه ساري دون أي قيود خلال مدة التعاون مع المجلس، وأنه مسؤول عن صحة المعلومات التي يلتزم بتقديمها عن طريق النظام الالكتروني المُحدَّد لذلك والخاص به فقط دون غيره إلى جانب التزامه بتطبيق كافة الواجبات والمهام الموضَّحة بالفصل الثامن من اللائحة، ويلتزم بإشعار المجلس فوراً عن أي خلل من شأنه التأثير على التزاماته تجاه المجلس أو أي مشكلة تتعلق بالترخيص نتيجة شطبه أو سحبه أو إيقافه، ويلتزم المركز بتقديم التراخيص عند التجديد، علماً أن أي مخالفات يرتكبها المركز تطبق بشأنها العقوبات المنصوص عليها في لائحة الجزاءات المرفقة باللائحة. <br /><br>4- يحتفظ المجلس  بالحق في القيام بتعديل اللائحة ، وتصبح اللائحة المعدلة نافذة المفعول بشكل تلقائي فوراً بعد نشرها بصورة أولية على هذا النظام، ويعد استخدامك للنظام بعد نشر اللائحة المعدلة على النظام تأكيداً إيجابياً منك بما يلي:  (أ) إقرارك باللائحة وأي تعديلات تطرأ عليها و (ب) الموافقة على الالتزام باللائحة بعد التعديل. <br>5- يعد النظام وجميع محتويات النص والصور والعلامات والشعارات والمحتويات الأخرى بالنظام ("محتويات النظام") ملكية خاصة بالمجلس أو بالأطراف الأخرى التي حصلنا على إذن منها أو ترخيص ولا يكون المجلس مسؤولاً عن أي خلل بالنظام الالكتروني ولا توجد عليه أي مسؤولية أياً كان نوعها تجاه المركز.<br>6- قد يحدث تعديل أو توقف للنظام في أي وقت وبدون إشعار مسبق ونحن غير ملزمين بدعم أو تحديث النظام. كما نحتفظ بحقنا في تحديد أو إيقاف الدخول للنظام في أي وقت بشكلٍ عام أو خاص لأي سبب يعود للمجلس وحده.<br>7- يمكن للمجلس استخدام المعلومات الخاصة بك  والمركز يقر بأن كافة المعلومات الموجودة في النظام هي ملك للبرنامج والمجلس كما نحتفظ بالحق في: (1) مراقبة و/أو تسجيل جميع الاتصالات والنشاطات المتعلقة بالخدمات و(2) مطالبة التحقق من جميع التحويلات وعمليات الدفع المطلوبة بالشكل الذي نراه ملائماً. <br>8- في حال إخلالنا بأي من الشروط أو الضوابط أو الالتزامات الواردة في هذا الالتزام أو الملاحق المرتبطة به أو الأنظمة واللوائح المعمول بها لدى مجلس الصحة أو تدني مستوى خدماتنا المقدمة إلى مجلس الصحة فنقر بأحقية مجلس الصحة في توقيع ما يراه من جزاءات بما في ذلك إلغاء اعتماد المركز،  ، ونقر بأن تقييم مستوى الخدمات المقدمة من المركز وتقدير التزام المركز بذلك الالتزام وأنظمة ولوائح وقرارات المجلس عائد لمجلس الصحة لدول مجلس التعاون.<br>9- نقر بصحة البيانات والمعلومات والعناوين المقدمة إلى المجلس، وأن كافة المراسلات بين المركز والمجلس تتم عبر النظام والبريد الالكتروني الرسمي المسجل للمركز  مع المجلس، وأن كل إشعار أو  بريد الكتروني يُرسل من خلال تلك الوسائل فهو بمثابة إقرار منا بالاستلام ويترتب عليه كافة آثاره القانونية.</p></p>
+            </div>
+        </div>
+    </div>
+    <div class="actions" style="opacity: 0; height: 1px;">
+      <div class="ui primary approve button"></div>
+    </div>
+    
+</div>
+
+    <!-- Confirmation Modal -->
+
+
+<div class="confirm-modal hidden" data-bs-backdrop="static">
+    <div class="modal-dialog" style="width: 70vh; height: 50vh;">
+        <div class="modal-content" style="border: 2px solid #fff; background-color: #fff; border-radius: 10px 10px 10px 10px;">
+
+                <i class="close icon" data-bs-dismiss="modal" style="font-size: 2em; position: relative !important; left: 47%;"></i>
+            <div class="modal-header">
+                <h2 class="ui header" style="padding-bottom: 5%; font-size: larger;">
+                    <div class="content md-header">Confirm Submission</div>
+                </h2>
+            </div>
+            <div class="modal-body" style="padding-bottom: 5%; font-size: larger;">
+            </div>
+            <div class="modal-footer"
+                 style="display: flex; justify-content: space-between; background-color: #fff; border-top: 2px solid #fff; padding: 10px;">
+                <a type="button" class="ui secondary small  fluid button" data-bs-dismiss="modal">No</a>
+                <button type="button" class="ui primary small submit fluid button small-side-paddings"
+                        onclick="submitForm()">Yes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	</main>
+
+
+
+	<div class="ui vertical basic segment footer">
+		<div class="ui container center aligned">
+            <div class="ui container center aligned">
+                <img class="footer-logo" src="/static/svg/gcc-old-logo-white.svg" alt="gulf health council logo">
+            <div class="social-media-icons" >
+                <a href="https://www.instagram.com/ghc_gcc/channel/?hl=en"><img class="social-media-icons-colors"  src="/static/svg/instagram.svg" alt="instagram"></a>
+                <a href=" https://ar-ar.facebook.com/GHCouncil/"><img class="social-media-icons-colors"  src="/static/svg/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/ghc_gcc"><img class="social-media-icons-colors"  src="/static/svg/twitter.svg" alt="twitter"></a>
+                <a href="https://www.youtube.com/channel/UCrKbHYpmpC_OrAfZ5P_qZXA"><img class="social-media-icons-colors"  src="/static/svg/youtube.svg" alt="youtube"></a>
+            </div>
+			<div class="copyright">
+                <div class="copyright">
+                    <span>@ 2024 </span>
+                    Gulf Health Council. All rights reserved
+                </div>
+			
+		</div>
+	</div>
+
+
+    
+
+<script src="/static/jsi18n/en/djangojs.js"></script>
+
+    <script src="/static/vendor/jquery.min.js"></script>
+    <script src="/static/vendor/semantic/dist/semantic.min.js"></script>
+    <script src="/static/js/vendor/jquery.inputmask.min.js"></script>
+    <script src="/static/js/vendor/cropper.min.js"></script>
+    <script src="/static/js/vendor/jquery-cropper.min.js"></script>
+    <script src="/static/js/vendor/glide.min.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/table-config.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.ui.dropdown').dropdown();
+        $('.ui.dropdown.item').dropdown({on: 'hover'});
+        $('.ui.checkbox').checkbox();
+        $('.message .close')
+          .on('click', function() {
+            $(this)
+              .closest('.message')
+              .transition('fade');
+          });
+      });
+    </script>
+
+    <!-- start forms and widgets-specific -->
+    <script src="/static/vendor/semantic-ui-calendar/calendar.min.js"></script>
+    <script src="/static/vendor/semantic/dist/components/dropdown.js"></script>
+    <script src="/static/vendor/state-machine/state-machine.min.js"></script>
+    <script src="/static/js/calendar-widget.js"></script>
+    <script src="/static/js/vendor/moment.js"></script>
+    <script src="/static/js/components/single-dropdown-widget.js"></script>
+    <script src="/static/js/components/multiple-dropdown-widget.js"></script>
+    <script src="/static/js/captcha.js"></script>
+    <script src="/static/js/components/file-widget.js"></script>
+    <script src="/static/js/components/number-input-widget.js"></script>
+    <script src="/static/js/components/labeled-select-widget.js"></script>
+    <script src="/static/js/city-country-controls.js"></script>
+
+    <!-- end forms and widgets-specific -->
+
+
+
+    
+    <link href="/static/css/components/preview-image-widget.css" type="text/css" media="all" rel="stylesheet">
+<link href="/static/css/components/file-widget.css" type="text/css" media="all" rel="stylesheet">
+<link href="/static/vendor/semantic-ui-calendar/calendar.min.css" type="text/css" media="all" rel="stylesheet">
+<script src="/static/js/components/preview-image-new-widget.js"></script>
+    <script src="/static/js/jquery.are-you-sure.js"></script>
+    <script src="/static/js/ays-beforeunload-shim.js"></script>
+    <script>
+        // country -> city map
+        CITIES = JSON.parse('{\u0022AF\u0022: [[2048, \u0022Kabul\u0022, \u0022AF\u0022]], \u0022DZ\u0022: [[2036, \u0022Algiers\u0022, \u0022DZ\u0022]], \u0022BH\u0022: [[110, \u0022manama\u0022, \u0022BH\u0022]], \u0022BD\u0022: [[2031, \u0022Barishal\u0022, \u0022BD\u0022], [81, \u0022Chitagong\u0022, \u0022BD\u0022], [2033, \u0022Cox\u0027s Bazar\u0022, \u0022BD\u0022], [2032, \u0022Cumilla\u0022, \u0022BD\u0022], [80, \u0022Dhaka\u0022, \u0022BD\u0022], [2030, \u0022Rajshahi\u0022, \u0022BD\u0022], [2059, \u0022Sherpur\u0022, \u0022BD\u0022], [83, \u0022Sylhet\u0022, \u0022BD\u0022]], \u0022BRF\u0022: [[157, \u0022Ouagadougou\u0022, \u0022BRF\u0022]], \u0022BR\u0022: [[155, \u0022Bujumbura\u0022, \u0022BR\u0022], [2037, \u0022Gitega\u0022, \u0022BR\u0022], [2053, \u0022Makamba\u0022, \u0022BR\u0022]], \u0022CM\u0022: [[2047, \u0022Yaounde\u0022, \u0022CM\u0022]], \u0022TD\u0022: [[2038, \u0022N\u0027Djamena\u0022, \u0022TD\u0022]], \u0022CHI\u0022: [[151, \u0022Beijing\u0022, \u0022CHI\u0022]], \u0022EGY\u0022: [[120, \u0022Alexandria\u0022, \u0022EGY\u0022], [87, \u0022Cairo\u0022, \u0022EGY\u0022]], \u0022ER\u0022: [[160, \u0022Asmara\u0022, \u0022ER\u0022]], \u0022ETH\u0022: [[2, \u0022Adama\u0022, \u0022ETH\u0022], [121, \u0022Addis Ababa\u0022, \u0022ETH\u0022]], \u0022GN\u0022: [[141, \u0022Accra\u0022, \u0022GN\u0022]], \u0022GU\u0022: [[166, \u0022Conakry\u0022, \u0022GU\u0022]], \u0022ACT\u0022: [[60, \u0022Ahmedabad\u0022, \u0022ACT\u0022], [61, \u0022Bangalore\u0022, \u0022ACT\u0022], [93, \u0022Calicut\u0022, \u0022ACT\u0022], [64, \u0022Chennai\u0022, \u0022ACT\u0022], [117, \u0022Cochin\u0022, \u0022ACT\u0022], [2019, \u0022Coimbatore\u0022, \u0022ACT\u0022], [1002, \u0022Delhi\u0022, \u0022ACT\u0022], [137, \u0022dimo\u0022, \u0022ACT\u0022], [132, \u0022Goa\u0022, \u0022ACT\u0022], [2015, \u0022Gorakhpur\u0022, \u0022ACT\u0022], [134, \u0022Hubli\u0022, \u0022ACT\u0022], [67, \u0022Hyderabad\u0022, \u0022ACT\u0022], [2026, \u0022Indore\u0022, \u0022ACT\u0022], [68, \u0022Jaipur\u0022, \u0022ACT\u0022], [65, \u0022Kochi\u0022, \u0022ACT\u0022], [133, \u0022Kolkata\u0022, \u0022ACT\u0022], [2020, \u0022Kutch\u0022, \u0022ACT\u0022], [62, \u0022Lucknow\u0022, \u0022ACT\u0022], [2027, \u0022Madurai\u0022, \u0022ACT\u0022], [99, \u0022Malappuram\u0022, \u0022ACT\u0022], [59, \u0022Mangalore\u0022, \u0022ACT\u0022], [97, \u0022Manjeri\u0022, \u0022ACT\u0022], [107, \u0022Margoa\u0022, \u0022ACT\u0022], [63, \u0022Mumbai\u0022, \u0022ACT\u0022], [66, \u0022New Delhi\u0022, \u0022ACT\u0022], [108, \u0022Panjim\u0022, \u0022ACT\u0022], [2021, \u0022Patna\u0022, \u0022ACT\u0022], [2017, \u0022Punjab\u0022, \u0022ACT\u0022], [72, \u0022Thalakkadathur\u0022, \u0022ACT\u0022], [101, \u0022Tirur\u0022, \u0022ACT\u0022], [70, \u0022Trichy\u0022, \u0022ACT\u0022], [69, \u0022Triuvananthapuram\u0022, \u0022ACT\u0022], [2028, \u0022Visakhapatnam\u0022, \u0022ACT\u0022]], \u0022IDN\u0022: [[86, \u0022Jakarta Selatan\u0022, \u0022IDN\u0022], [98, \u0022Malang\u0022, \u0022IDN\u0022], [131, \u0022Matram\u0022, \u0022IDN\u0022], [95, \u0022Surabaya\u0022, \u0022IDN\u0022]], \u0022IRQ\u0022: [[2050, \u0022Baghdad\u0022, \u0022IRQ\u0022]], \u0022IVC\u0022: [[158, \u0022Yamoussoukro\u0022, \u0022IVC\u0022]], \u0022JR\u0022: [[148, \u0022Amman\u0022, \u0022JR\u0022], [2051, \u0022Irbid\u0022, \u0022JR\u0022]], \u0022KN\u0022: [[2044, \u0022Eldoret\u0022, \u0022KN\u0022], [2045, \u0022Kakamega\u0022, \u0022KN\u0022], [2042, \u0022Kisumu\u0022, \u0022KN\u0022], [2046, \u0022Machakos\u0022, \u0022KN\u0022], [2041, \u0022Mombasa\u0022, \u0022KN\u0022], [140, \u0022Nairobi\u0022, \u0022KN\u0022], [2043, \u0022Nakuru\u0022, \u0022KN\u0022]], \u0022KW\u0022: [[111, \u0022Kuwait\u0022, \u0022KW\u0022]], \u0022LB\u0022: [[149, \u0022Beirut\u0022, \u0022LB\u0022]], \u0022MDG\u0022: [[146, \u0022Antananarivo\u0022, \u0022MDG\u0022]], \u0022MI\u0022: [[163, \u0022Bamako\u0022, \u0022MI\u0022]], \u0022MA\u0022: [[2039, \u0022Nouakchott\u0022, \u0022MA\u0022]], \u0022MR\u0022: [[152, \u0022Casablanca\u0022, \u0022MR\u0022], [153, \u0022Marrakech\u0022, \u0022MR\u0022], [147, \u0022Rabat\u0022, \u0022MR\u0022], [154, \u0022Tangier\u0022, \u0022MR\u0022]], \u0022NEP\u0022: [[89, \u0022Kathmandu\u0022, \u0022NEP\u0022], [82, \u0022Tripureshwor\u0022, \u0022NEP\u0022]], \u0022NG\u0022: [[164, \u0022Niamey\u0022, \u0022NG\u0022]], \u0022NIG\u0022: [[156, \u0022Abuja\u0022, \u0022NIG\u0022], [2054, \u0022Lagos state\u0022, \u0022NIG\u0022]], \u0022OM\u0022: [[112, \u0022muscat\u0022, \u0022OM\u0022], [2052, \u0022SHOUQ\u0022, \u0022OM\u0022]], \u0022PAK\u0022: [[91, \u0022Gujranwala\u0022, \u0022PAK\u0022], [2055, \u0022Gwadar\u0022, \u0022PAK\u0022], [73, \u0022Islamabad\u0022, \u0022PAK\u0022], [74, \u0022Karachi\u0022, \u0022PAK\u0022], [2058, \u0022Khuzdar\u0022, \u0022PAK\u0022], [75, \u0022Lahore\u0022, \u0022PAK\u0022], [76, \u0022Multan\u0022, \u0022PAK\u0022], [2057, \u0022Panjgur\u0022, \u0022PAK\u0022], [77, \u0022Peshawar\u0022, \u0022PAK\u0022], [92, \u0022Quetta\u0022, \u0022PAK\u0022], [90, \u0022Rawalpindi\u0022, \u0022PAK\u0022], [2025, \u0022Sialkot\u0022, \u0022PAK\u0022], [2056, \u0022Turbat\u0022, \u0022PAK\u0022]], \u0022PHL\u0022: [[104, \u0022Bacolod\u0022, \u0022PHL\u0022], [79, \u0022Cebu\u0022, \u0022PHL\u0022], [105, \u0022Davao\u0022, \u0022PHL\u0022], [144, \u0022Iloilo\u0022, \u0022PHL\u0022], [100, \u0022Makati\u0022, \u0022PHL\u0022], [102, \u0022Mandaluyong\u0022, \u0022PHL\u0022], [143, \u0022Mandaue\u0022, \u0022PHL\u0022], [78, \u0022Manila\u0022, \u0022PHL\u0022], [150, \u0022Mindanao\u0022, \u0022PHL\u0022], [103, \u0022Quezon\u0022, \u0022PHL\u0022], [142, \u0022Zamboanga\u0022, \u0022PHL\u0022]], \u0022QA\u0022: [[113, \u0022Doha\u0022, \u0022QA\u0022]], \u0022SA\u0022: [[6, \u0022Riyadh\u0022, \u0022SA\u0022]], \u0022SL\u0022: [[165, \u0022Freetown\u0022, \u0022SL\u0022]], \u0022so\u0022: [[2040, \u0022Mogadishu\u0022, \u0022so\u0022]], \u0022ZA\u0022: [[2035, \u0022Pretoria\u0022, \u0022ZA\u0022]], \u0022Sri\u0022: [[94, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [96, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [2018, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [2023, \u0022Anuradhapura\u0022, \u0022Sri\u0022], [84, \u0022Colombo\u0022, \u0022Sri\u0022], [2024, \u0022Kandy\u0022, \u0022Sri\u0022], [85, \u0022Kurunegala\u0022, \u0022Sri\u0022]], \u0022SUD\u0022: [[109, \u0022Khartoum\u0022, \u0022SUD\u0022]], \u0022SYR\u0022: [[119, \u0022Aleppo\u0022, \u0022SYR\u0022], [118, \u0022Damascus\u0022, \u0022SYR\u0022]], \u0022TNZ\u0022: [[168, \u0022Dar es Salaam\u0022, \u0022TNZ\u0022]], \u0022THI\u0022: [[162, \u0022Bangkok\u0022, \u0022THI\u0022]], \u0022TUN\u0022: [[161, \u0022Tunis\u0022, \u0022TUN\u0022]], \u0022TUR\u0022: [[167, \u0022Ankara\u0022, \u0022TUR\u0022], [2012, \u0022Antakya\u0022, \u0022TUR\u0022], [2013, \u0022Diyarbakir\u0022, \u0022TUR\u0022], [2011, \u0022Gaziantap\u0022, \u0022TUR\u0022], [169, \u0022Istanbul\u0022, \u0022TUR\u0022], [2014, \u0022Izmir\u0022, \u0022TUR\u0022]], \u0022UAE\u0022: [[115, \u0022Abu Dhabi\u0022, \u0022UAE\u0022]], \u0022UG\u0022: [[145, \u0022Kampala\u0022, \u0022UG\u0022]], \u0022VT\u0022: [[159, \u0022Hanoi\u0022, \u0022VT\u0022], [2034, \u0022Ho Chi Minh\u0022, \u0022VT\u0022]], \u0022YEM\u0022: [[2049, \u0022Sana\u0027a\u0022, \u0022YEM\u0022], [114, \u0022sanna\u0022, \u0022YEM\u0022]]}');
+        REQUIRED_FIELDS = JSON.parse('[\u0022authority_licence_attachment\u0022, \u0022captcha_1\u0022, \u0022name\u0022, \u0022country\u0022, \u0022city\u0022, \u0022address\u0022, \u0022zip_code\u0022, \u0022phone\u0022, \u0022fax\u0022, \u0022first_name_for_ghc\u0022, \u0022last_name_for_ghc\u0022, \u0022phone_for_ghc\u0022, \u0022email_for_ghc\u0022, \u0022first_name_for_candidates\u0022, \u0022last_name_for_candidates\u0022, \u0022authority_licence\u0022, \u0022accept_rules\u0022, \u0022facility_category\u0022, \u0022license_number\u0022, \u0022license_issue_date\u0022, \u0022license_expiry_date\u0022, \u0022educational_qualification_attachments\u0022, \u0022criminal_record_certificate\u0022, \u0022owner_passport_number\u0022, \u0022captcha\u0022]');
+        OPTIONAL_FIELDS = JSON.parse('[\u0022web_site\u0022, \u0022fax_for_candidates\u0022, \u0022mobile_for_ghc\u0022]');
+
+        CACHE_URL_TEMPLATE = "/cache/key_mock/"
+        $('#view-license-agreement').click(function () {
+            showAcceptLicenceAgreementDialog();
+        });
+        $('form').areYouSure();
+    </script>
+    <script src="/static/js/components/form_validation.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" crossorigin="" defer></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js" crossorigin="" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var citySelect = document.getElementById('id_city');
+            var latitudeInput = document.getElementById('id_latitude');
+            var longitudeInput = document.getElementById('id_longitude');
+
+            var selectedOption = citySelect.options[citySelect.selectedIndex];
+            var selectedCityName = selectedOption.text;
+
+            var map = L.map("map").setView([0, 0], 8);
+
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: "&copy; OpenStreetMap contributors",
+            }).addTo(map);
+
+            var geocodeUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(selectedCityName)}`;
+
+            fetch(geocodeUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.length > 0) {
+                        var lat = parseFloat(data[0].lat);
+                        var lon = parseFloat(data[0].lon);
+
+                        map.setView([lat, lon], 12);
+
+                        var marker = L.marker([lat, lon], {draggable: true}).addTo(map)
+                            .bindPopup(selectedCityName)
+                            .openPopup();
+
+                        marker.on('dragend', function (event) {
+                            var marker = event.target;
+                            var position = marker.getLatLng();
+
+                            latitudeInput.value = position.lat;
+                            longitudeInput.value = position.lng;
+
+                        });
+                    } else {
+                        console.error("Coordinates not found for the city: " + selectedCityName);
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching coordinates:", error);
+                });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.confirm-modal').modal('hide');
+        });
+
+        function submitForm() {
+            document.getElementById('accreditation-request-form').submit();
+        }
+
+        function saveContinue() {
+        $(document).ready(function () {
+            var userEmail = $('#id_email_for_ghc').val();
+            console.log(userEmail)
+            if (userEmail){
+                $('.confirm-modal .modal-body').html('<p> An OTP message will be sent to <strong>"' + userEmail + '"</strong>, are you sure?</p>');
+                $('.confirm-modal').modal('show');
+            }
+            else {
+                $('.emailErrorMessage').html('<p style="color: red;">This field is required.</p>');
+
+            }
+        })
+        }
+    </script>
+
+
+</body>
+</html>

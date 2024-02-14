@@ -2,7 +2,7 @@ from colorama import Fore, Style
 import os
 import re
 
-from replicator.__request import ManageRequest
+from replicator.__replica import Replicator
 
 def extract_domain(url):
     match = re.search(r'https?://(?:www\.)?([a-zA-Z0-9.-]+)', url)
@@ -28,7 +28,6 @@ def input_text(text=None,color=None):
         text_ = Fore.RED+"\n╔═══"+Fore.CYAN+"["+color+text+Fore.CYAN+"]"+"\n"+Fore.RED+"║"+"\n"+Fore.RED+"╚═══➣➣ "+Fore.GREEN
     return text_
 
-os.mkfifo('output/file.html')
 web_url = input(input_text("Enter your target Web URL(with 'http or https')",Fore.GREEN))
 if not validate_url(web_url): # if domain can be extracted then the url is valid
     web_url = ""
@@ -38,7 +37,7 @@ while len(web_url) < 1:
     if not validate_url(web_url): # if domain can be extracted then the url is valid
         web_url = ""
 
-manage_request = ManageRequest(web_url)
-html, pages, css, js, files = manage_request.start()
+replicator = Replicator(web_url)
+replicator.clonePage()
 
-print("All Pages:",pages,"\n\n\nAll Js files:", js, "\n\n\nAll css files:",css,"\n\n\nAll others link:",files)
+# print("All Pages:",pages,"\n\n\nAll Js files:", js, "\n\n\nAll css files:",css,"\n\n\nAll others link:",files)

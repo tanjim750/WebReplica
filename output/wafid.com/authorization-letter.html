@@ -1,0 +1,1640 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axcv6afvufi6/b/Rum-JS-Public/o/elastic-apm-rum.umd.min.js" crossorigin></script>
+
+  <script>
+    elasticApm.init({
+      serviceName: 'GCC-Frontend',
+      serverUrl: 'https://apm-lean.acuative-me.com:8200',
+      environment: 'Production',
+    })
+  </script>
+
+
+    <link rel="icon" type="image/x-icon" href="/static/svg/logo-favicon-light.svg">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146902071-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-146902071-1');
+    </script>
+
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Wafid | وافد</title>
+    <meta name ="description" content="Wafid is a program under the umbrella of the Gulf Health Council that enables individuals bound to work or reside in the GCC to book their medical check-up appointments.
+    وافد هو احدى برامج مجلس الصحة الخليجي غرضه توفير مواعيد الفحص الطبي للوافدين القادمين الى دول مجلس التعاون الخليجي بغرض العمل او الإقامة.">
+    <meta name="keywords" content="Wafid, GCC, GHC, Medical center, Gulf Cooperation Council States, Medical Examinations, health check-up, appointment, medical centers accreditation, Accreditation status">
+
+
+    <!-- ISO 3166-1-alpha-2 Flags style-->
+
+
+    <link rel="stylesheet" href="/static/country-flags/image_sprite/ip2location-image-sprite.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"  crossorigin=""/>
+
+
+	
+    
+        
+
+            <link rel="stylesheet" href="/static/vendor/semantic/dist/semantic.min.css">
+            <link rel="stylesheet" href="/static/css/semantic-responsive.css">
+
+            <!-- Glide.js styles -->
+            <link rel="stylesheet" href="/static/css/vendor/glide.core.min.css">
+            <link rel="stylesheet" href="/static/css/vendor/glide.theme.min.css">
+
+            <!-- CropperJS styles -->
+            <link rel="stylesheet" href="/static/css/vendor/cropper.min.css">
+
+            <!-- Custom styles -->
+            <link rel="stylesheet" href="/static/css/main.css">
+            <link rel="stylesheet" href="/static/css/menu.css">
+            <link rel="stylesheet" href="/static/css/instant-notifications.css">
+
+            <!-- Components -->
+            <link rel="stylesheet" href="/static/css/components/breadcrumbs.css">
+            <link rel="stylesheet" href="/static/css/components/cards.css">
+            <link rel="stylesheet" href="/static/css/components/forms.css">
+            <link rel="stylesheet" href="/static/css/components/glide.css">
+            <link rel="stylesheet" href="/static/css/components/menu.css">
+            <link rel="stylesheet" href="/static/css/components/table.css">
+            <link rel="stylesheet" href="/static/css/components/message.css">
+            <link rel="stylesheet" href="/static/css/components/modal.css">
+            <link rel="stylesheet" href="/static/css/components/icons.css">
+        
+	
+    
+        <link rel="stylesheet" href="/static/css/pages/accreditation-request.css">
+    
+
+	
+</head>
+<body>
+
+	
+		<div class="ui menu basic borderless gcc-menu">
+			
+                    <div class="item">
+					<a href="/" id="gcc-header-icon-continer" class="header item brand menu-lsc-fix">
+						<img class="ui image" src="/static/svg/logo.svg">
+					</a>
+                </div>
+                    
+
+                    	
+            <div class="ui container">
+                <div class="ui grid gcc-submenu-wrapper">
+            <div class="full wide column">
+                <div class="ui menu stackable gcc-submenu">
+                    <div class="ui container centered gcc-submenu-continer width-edit">
+                        
+
+
+
+<a class=" item" href="/">Home</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        GHC accreditation-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="/accreditation/apply/">Apply for accreditation </a>-->
+<!--            <a class="item"-->
+<!--               href="/accreditation/status/">Check accreditation status</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Examinations
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="/book-appointment/">Book an Appointment </a>
+            <a class="item"
+               href="/search-slip/">Appointment Slips</a>
+            <a class="item"
+               href="/medical-status-search/">Medical Examination Result</a>
+        </div>
+    </div>
+
+
+
+<!--<a class=" item"-->
+<!--   href="/medical-status-search/">Health Check-Up</a>-->
+
+<!--<a class=" item"-->
+<!--   href="medical-center.html">Medical centers</a>-->
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Centers
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="medical-center.html">Wafid Medical Centers Accreditation</a>
+            <a class="item"
+               href="search.html">Medical Centers List</a>
+        </div>
+    </div>
+
+
+
+<a class=" item"
+   href="guidelines.html">Guidelines</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        Check status-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="/medical-status-search/">Check candidate status</a>-->
+<!--            <a class="item"-->
+<!--               href="certificate-search.html">Membership certeficate</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+<a class=" item"
+   href="faq.html">FAQs</a>
+<!--<a class="item" href="/static/pdf/Regulations%20of%20Medical%20Examination%20of%20Expatriates%20Coming%20to%20GCC%20States%20for%20Work%20or%20Residence.pdf"-->
+<!--   target="_blank">Rules and regulations</a>-->
+
+<a class=" item" href="contact-us.html">Contact Us</a>
+
+
+
+                        
+                            <a class="item mobile tablet only" href="login.html">Login</a>
+						
+
+                        
+                            <div class="item support-phone mobile tablet only">
+                                <img src="/static/svg/headset.svg" class="support-icon">
+                                <b>
+                                    <a href="tel:+966920023560">+966920023560</a>
+                                </b>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	        
+        </div>
+
+					<div class="right menu" style="padding-right: 3%">
+						
+						
+							<div class="item tablet or lower hidden">
+								<a class="ui secondary button" id="gcc-header-login-botton" href="login.html">Login</a>
+							</div>
+						
+
+                        <div class="mobile tablet only right menu menu-icon menu-lsc-fix">
+                            <button class="button basic" id="menubutton">
+                                <i class="bars icon"></i>
+                                <i class="x icon"></i>
+                            </button>
+                        </div>
+					</div>
+
+			
+		</div>
+	
+
+    
+    
+
+
+
+
+
+	<main class="">
+			
+
+			
+    <div class="ui container">
+        <div class="ui grid">
+            <div class="twelve wide stretched column">
+                <div class="ui segment">
+                <form class="ui form " id="accreditation-request-form"
+                      method="post"  action='authorization-letter.html' novalidate autocomplete="off">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="vgTtxDgYqC6m9lmeywYXp8Y4z618rxjmxkhBXmddPQrifTXgOXRaiNSWTTRr69BP">
+                    
+                    
+                    <input type="submit" style="display: none">
+
+                    <div class="form-fields-container" style="width: 950px; margin: auto;">
+                        <h3 class="ui header">
+                            <div class="content md-header">Medical Center Details</div>
+                        </h3>
+                        <div class="ui stackable two column grid mobile reversed">
+                            <div class="thirteen wide column">
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Medical center name
+			
+		</label>
+	
+
+	
+		<input type="text" name="name" placeholder="Enter name" maxlength="50" required id="id_name">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Chamber of commerce registration number
+			
+		</label>
+	
+
+	
+		<input type="text" name="ccr_number" placeholder="Enter number" maxlength="25" required id="id_ccr_number">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Chamber of commerce registration date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="ccr_registration_date" placeholder="Select Date" required id="id_ccr_registration_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Chamber of commerce expiry date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="ccr_expiry_date" placeholder="Select Date" required id="id_ccr_expiry_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Medical center address
+			
+		</label>
+	
+
+	
+		<input type="text" name="address" placeholder="Enter address" required id="id_address">
+	
+	
+	
+		
+	
+</div>
+
+                                    
+                                        
+<div class="field " >
+	
+		<label>
+			Medical center country
+			
+		</label>
+	
+
+	
+		<select name="country" required id="id_country">
+  <option value="" selected>---------</option>
+
+  <option value="AF">Afghanistan</option>
+
+  <option value="DZ">Algeria</option>
+
+  <option value="AR">Argentina</option>
+
+  <option value="AM">Armenia</option>
+
+  <option value="AU">Australia</option>
+
+  <option value="AT">Austria</option>
+
+  <option value="AZ">Azerbaijan</option>
+
+  <option value="BH">Bahrain</option>
+
+  <option value="BD">Bangladesh</option>
+
+  <option value="by">Belarus</option>
+
+  <option value="BE">Belgium</option>
+
+  <option value="BZ">Belize</option>
+
+  <option value="BT">Bhutan</option>
+
+  <option value="BA">Bosnia and Herzegovina</option>
+
+  <option value="BRA">Brazil</option>
+
+  <option value="BG">Bulgaria</option>
+
+  <option value="BRF">Burkina Faso</option>
+
+  <option value="BR">Burundi</option>
+
+  <option value="CM">Cameroon</option>
+
+  <option value="ca">Canada</option>
+
+  <option value="TD">Chad</option>
+
+  <option value="CHI">China</option>
+
+  <option value="CO">Colombia</option>
+
+  <option value="CY">Cyprus</option>
+
+  <option value="CZ">Czech</option>
+
+  <option value="DK">Denmark</option>
+
+  <option value="DJ">Djibouti</option>
+
+  <option value="DM">Dominica</option>
+
+  <option value="EC">Ecuador</option>
+
+  <option value="EGY">Egypt</option>
+
+  <option value="ER">Eritrea</option>
+
+  <option value="ETH">Ethiopia</option>
+
+  <option value="FI">Finland</option>
+
+  <option value="FR">France</option>
+
+  <option value="de">Germany</option>
+
+  <option value="GN">Ghana</option>
+
+  <option value="GR">Greece</option>
+
+  <option value="GRE">Grenada</option>
+
+  <option value="GU">Guinea</option>
+
+  <option value="GW">Guinea-Bissau</option>
+
+  <option value="ACT">India</option>
+
+  <option value="IDN">Indonesia</option>
+
+  <option value="ir">Iran</option>
+
+  <option value="IRQ">Iraq</option>
+
+  <option value="IE">Ireland</option>
+
+  <option value="IT">Italy</option>
+
+  <option value="IVC">Ivory Coast</option>
+
+  <option value="JAM">Jamaica</option>
+
+  <option value="JPN">Japan</option>
+
+  <option value="JR">Jordan</option>
+
+  <option value="KZ">Kazakhstan</option>
+
+  <option value="KN">Kenya</option>
+
+  <option value="KW">Kuwait</option>
+
+  <option value="LB">Lebanon</option>
+
+  <option value="LY">Libya</option>
+
+  <option value="MDG">Madagascar</option>
+
+  <option value="MV">Maldives</option>
+
+  <option value="MI">Mali</option>
+
+  <option value="MT">Malta</option>
+
+  <option value="MA">Mauritania</option>
+
+  <option value="MX">Mexico</option>
+
+  <option value="ME">Montenegro</option>
+
+  <option value="MR">Morocco</option>
+
+  <option value="MM">Myanmar</option>
+
+  <option value="NEP">Nepal</option>
+
+  <option value="NL">Netherlands</option>
+
+  <option value="NZ">New Zealand</option>
+
+  <option value="NEZ">New Zealand</option>
+
+  <option value="NG">Niger</option>
+
+  <option value="NIG">Nigeria</option>
+
+  <option value="OM">Oman</option>
+
+  <option value="PAK">Pakistan</option>
+
+  <option value="PS">Palestine</option>
+
+  <option value="PER">Peru</option>
+
+  <option value="PHL">Philippines</option>
+
+  <option value="123">Poland</option>
+
+  <option value="PT">Portugal</option>
+
+  <option value="QA">Qatar</option>
+
+  <option value="RO">Romania</option>
+
+  <option value="RU">Russia</option>
+
+  <option value="SKN">Saint Kitts and Nevis</option>
+
+  <option value="SA">Saudi Arabia</option>
+
+  <option value="RS">Serbia</option>
+
+  <option value="SL">Sierra Leone</option>
+
+  <option value="so">Somalia</option>
+
+  <option value="ZA">South Africa</option>
+
+  <option value="KR">South Korea</option>
+
+  <option value="Sri">Sri Lanka</option>
+
+  <option value="SUD">Sudan</option>
+
+  <option value="SE">Swedish</option>
+
+  <option value="ch">Switzerland</option>
+
+  <option value="SYR">Syria</option>
+
+  <option value="TJ">Tajikistan</option>
+
+  <option value="TNZ">Tanzania</option>
+
+  <option value="THI">Thailand</option>
+
+  <option value="TG">Togo</option>
+
+  <option value="TUN">Tunesia</option>
+
+  <option value="TUR">Turkey</option>
+
+  <option value="TM">Turkmenistan</option>
+
+  <option value="UAE">UAE</option>
+
+  <option value="UG">Uganda</option>
+
+  <option value="UA">Ukraine</option>
+
+  <option value="AE">United Arab Emirates</option>
+
+  <option value="US">United States</option>
+
+  <option value="UZ">Uzbekistan</option>
+
+  <option value="VU">Vanuatu</option>
+
+  <option value="VEN">Venezuela</option>
+
+  <option value="VT">Vietnam</option>
+
+  <option value="YEM">Yemen</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                                </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Medical center city
+			
+		</label>
+	
+
+	
+		<select name="city" required id="id_city">
+  <option value="" selected>---------</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Medical center email
+			
+		</label>
+	
+
+	
+		<input type="text" name="medical_center_email" placeholder="Enter email" maxlength="320" required id="id_medical_center_email">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Medical center phone number
+			
+		</label>
+	
+
+	
+		<input type="text" name="medical_center_phone" placeholder="Enter phone" maxlength="14" required id="id_medical_center_phone">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h3 class="ui header">
+                            <div class="content md-header">Authorizing Body Legal Representative Details</div>
+                        </h3>
+                        <div class="ui stackable two column grid">
+
+                            <div class="thirteen wide column">
+
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Legal representative full name
+			
+		</label>
+	
+
+	
+		<input type="text" name="legal_representative_full_name" placeholder="Enter full name" maxlength="50" required id="id_legal_representative_full_name">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Legal representative nation ID number
+			
+		</label>
+	
+
+	
+		<input type="text" name="legal_representative_ID_number" placeholder="Enter ID number" maxlength="20" minlength="6" required id="id_legal_representative_ID_number">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                    <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Legal representative passport number
+			
+		</label>
+	
+
+	
+		<input type="text" name="legal_representative_passport_number" placeholder="Enter passport" maxlength="10" minlength="6" required id="id_legal_representative_passport_number">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Legal representative job title
+			
+		</label>
+	
+
+	
+		<input type="text" name="legal_representative_job_title" placeholder="Enter job title" maxlength="50" required id="id_legal_representative_job_title">
+	
+	
+	
+		
+	
+</div>
+
+                                </div></div>
+                                    <div class="field">
+                                <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Legal representative phone
+			
+		</label>
+	
+
+	
+		<input type="text" name="legal_representative_phone" placeholder="Enter phone" maxlength="14" required id="id_legal_representative_phone">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Legal representative email
+			
+		</label>
+	
+
+	
+		<input type="text" name="legal_representative_email" placeholder="Enter email" maxlength="320" required id="id_legal_representative_email">
+	
+	
+	
+		
+	
+</div>
+
+                                </div>
+                                    </div>
+                                <h3 class="ui header">
+                                    <div class="content md-header">Authorized Body Details</div>
+                                </h3>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized body type
+			
+		</label>
+	
+
+	
+		<div id="id_authorized_body_type" class="inline fields">
+        
+            
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="authorized_body_type" value="individual" required id="id_authorized_body_type_0">
+
+
+    <label for="id_authorized_body_type_0">
+        Individual
+    </label>
+
+
+                    </div>
+                </div>
+            
+        
+            
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="authorized_body_type" value="organization" required id="id_authorized_body_type_1">
+
+
+    <label for="id_authorized_body_type_1">
+        Organization
+    </label>
+
+
+                    </div>
+                </div>
+            
+        
+    </div>
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Organization chamber of commerce registration number
+			
+		</label>
+	
+
+	
+		<input type="text" name="org_ccr_number" placeholder="Enter number" maxlength="25" id="id_org_ccr_number">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Organization chamber of commerce registration date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="org_ccr_number_registration_date" placeholder="Select Date" id="id_org_ccr_number_registration_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person full name (English)
+			
+		</label>
+	
+
+	
+		<input type="text" name="authorized_person_full_name" placeholder="Enter full name" maxlength="50" required id="id_authorized_person_full_name">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person national ID
+			
+		</label>
+	
+
+	
+		<input type="text" name="authorized_person_national_ID" placeholder="Enter national ID" maxlength="20" minlength="6" required id="id_authorized_person_national_ID">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person passport number
+			
+		</label>
+	
+
+	
+		<input type="text" name="authorized_person_passport_number" placeholder="Enter passport" maxlength="10" minlength="6" required id="id_authorized_person_passport_number">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person passport issue date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="authorized_person_passport_issue_date" placeholder="Select Date" id="id_authorized_person_passport_issue_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person passport expiry date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="authorized_person_passport_expiry_date" placeholder="Select Date" id="id_authorized_person_passport_expiry_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person address
+			
+		</label>
+	
+
+	
+		<input type="text" name="authorized_person_address" placeholder="Enter address" maxlength="50" required id="id_authorized_person_address">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person job title
+			
+		</label>
+	
+
+	
+		<input type="text" name="authorized_person_job_title" placeholder="Enter job title" maxlength="50" required id="id_authorized_person_job_title">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person email
+			
+		</label>
+	
+
+	
+		<input type="text" name="authorized_person_email" placeholder="Enter email" maxlength="320" required id="id_authorized_person_email">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person country
+			
+		</label>
+	
+
+	
+		<select name="authorized_person_country" required id="id_authorized_person_country">
+  <option value="" selected>---------</option>
+
+  <option value="AF">Afghanistan</option>
+
+  <option value="DZ">Algeria</option>
+
+  <option value="AR">Argentina</option>
+
+  <option value="AM">Armenia</option>
+
+  <option value="AU">Australia</option>
+
+  <option value="AT">Austria</option>
+
+  <option value="AZ">Azerbaijan</option>
+
+  <option value="BH">Bahrain</option>
+
+  <option value="BD">Bangladesh</option>
+
+  <option value="by">Belarus</option>
+
+  <option value="BE">Belgium</option>
+
+  <option value="BZ">Belize</option>
+
+  <option value="BT">Bhutan</option>
+
+  <option value="BA">Bosnia and Herzegovina</option>
+
+  <option value="BRA">Brazil</option>
+
+  <option value="BG">Bulgaria</option>
+
+  <option value="BRF">Burkina Faso</option>
+
+  <option value="BR">Burundi</option>
+
+  <option value="CM">Cameroon</option>
+
+  <option value="ca">Canada</option>
+
+  <option value="TD">Chad</option>
+
+  <option value="CHI">China</option>
+
+  <option value="CO">Colombia</option>
+
+  <option value="CY">Cyprus</option>
+
+  <option value="CZ">Czech</option>
+
+  <option value="DK">Denmark</option>
+
+  <option value="DJ">Djibouti</option>
+
+  <option value="DM">Dominica</option>
+
+  <option value="EC">Ecuador</option>
+
+  <option value="EGY">Egypt</option>
+
+  <option value="ER">Eritrea</option>
+
+  <option value="ETH">Ethiopia</option>
+
+  <option value="FI">Finland</option>
+
+  <option value="FR">France</option>
+
+  <option value="de">Germany</option>
+
+  <option value="GN">Ghana</option>
+
+  <option value="GR">Greece</option>
+
+  <option value="GRE">Grenada</option>
+
+  <option value="GU">Guinea</option>
+
+  <option value="GW">Guinea-Bissau</option>
+
+  <option value="ACT">India</option>
+
+  <option value="IDN">Indonesia</option>
+
+  <option value="ir">Iran</option>
+
+  <option value="IRQ">Iraq</option>
+
+  <option value="IE">Ireland</option>
+
+  <option value="IT">Italy</option>
+
+  <option value="IVC">Ivory Coast</option>
+
+  <option value="JAM">Jamaica</option>
+
+  <option value="JPN">Japan</option>
+
+  <option value="JR">Jordan</option>
+
+  <option value="KZ">Kazakhstan</option>
+
+  <option value="KN">Kenya</option>
+
+  <option value="KW">Kuwait</option>
+
+  <option value="LB">Lebanon</option>
+
+  <option value="LY">Libya</option>
+
+  <option value="MDG">Madagascar</option>
+
+  <option value="MV">Maldives</option>
+
+  <option value="MI">Mali</option>
+
+  <option value="MT">Malta</option>
+
+  <option value="MA">Mauritania</option>
+
+  <option value="MX">Mexico</option>
+
+  <option value="ME">Montenegro</option>
+
+  <option value="MR">Morocco</option>
+
+  <option value="MM">Myanmar</option>
+
+  <option value="NEP">Nepal</option>
+
+  <option value="NL">Netherlands</option>
+
+  <option value="NZ">New Zealand</option>
+
+  <option value="NEZ">New Zealand</option>
+
+  <option value="NG">Niger</option>
+
+  <option value="NIG">Nigeria</option>
+
+  <option value="OM">Oman</option>
+
+  <option value="PAK">Pakistan</option>
+
+  <option value="PS">Palestine</option>
+
+  <option value="PER">Peru</option>
+
+  <option value="PHL">Philippines</option>
+
+  <option value="123">Poland</option>
+
+  <option value="PT">Portugal</option>
+
+  <option value="QA">Qatar</option>
+
+  <option value="RO">Romania</option>
+
+  <option value="RU">Russia</option>
+
+  <option value="SKN">Saint Kitts and Nevis</option>
+
+  <option value="SA">Saudi Arabia</option>
+
+  <option value="RS">Serbia</option>
+
+  <option value="SL">Sierra Leone</option>
+
+  <option value="so">Somalia</option>
+
+  <option value="ZA">South Africa</option>
+
+  <option value="KR">South Korea</option>
+
+  <option value="Sri">Sri Lanka</option>
+
+  <option value="SUD">Sudan</option>
+
+  <option value="SE">Swedish</option>
+
+  <option value="ch">Switzerland</option>
+
+  <option value="SYR">Syria</option>
+
+  <option value="TJ">Tajikistan</option>
+
+  <option value="TNZ">Tanzania</option>
+
+  <option value="THI">Thailand</option>
+
+  <option value="TG">Togo</option>
+
+  <option value="TUN">Tunesia</option>
+
+  <option value="TUR">Turkey</option>
+
+  <option value="TM">Turkmenistan</option>
+
+  <option value="UAE">UAE</option>
+
+  <option value="UG">Uganda</option>
+
+  <option value="UA">Ukraine</option>
+
+  <option value="AE">United Arab Emirates</option>
+
+  <option value="US">United States</option>
+
+  <option value="UZ">Uzbekistan</option>
+
+  <option value="VU">Vanuatu</option>
+
+  <option value="VEN">Venezuela</option>
+
+  <option value="VT">Vietnam</option>
+
+  <option value="YEM">Yemen</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Issue authority city
+			
+		</label>
+	
+
+	
+		<input type="text" name="issue_authority_city" placeholder="Enter authority city" maxlength="100" required id="id_issue_authority_city">
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorized person mobile number
+			
+		</label>
+	
+
+	
+		<input type="text" name="authorized_person_mobile_number" placeholder="Enter phone" maxlength="14" required id="id_authorized_person_mobile_number">
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <h3 class="ui header">
+                                    <div class="content md-header">Authorization Period</div>
+                                </h3>
+                                <div class="field">
+                                    <div class="two fields">
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorization start date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="authorization_start_date" placeholder="Select Date" required id="id_authorization_start_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                        
+                                        
+<div class="field " >
+	
+		<label>
+			Authorization end date
+			
+		</label>
+	
+
+	
+		<div class="ui calendar calendar-js">
+    <div class="ui input right icon">
+        <i class="calendar outline icon"></i>
+        <input type="text" name="authorization_end_date" placeholder="Select Date" required id="id_authorization_end_date">
+
+
+    </div>
+</div>
+	
+	
+	
+		
+	
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="two fields">
+                                    <script src="https://www.google.com/recaptcha/api.js?render=6LflPAwnAAAAAL2wBGi6tSyGUyj-xFvftINOR9xp"></script>
+<script type="text/javascript">
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LflPAwnAAAAAL2wBGi6tSyGUyj-xFvftINOR9xp', {action: 'form'})
+        .then(function(token) {
+            console.log("reCAPTCHA validated for 'data-widget-uuid=\"3df809d06a2b41a0b0df390ca6d45de1\"'. Setting input value...")
+            var element = document.querySelector('.g-recaptcha[data-widget-uuid="3df809d06a2b41a0b0df390ca6d45de1"]');
+            element.value = token;
+        });
+    });
+</script>
+
+<input class="g-recaptcha"
+    type="hidden"
+    name="captcha"
+     required_score="0.6" data-sitekey="6LflPAwnAAAAAL2wBGi6tSyGUyj-xFvftINOR9xp" required id="id_captcha" data-widget-uuid="3df809d06a2b41a0b0df390ca6d45de1" data-callback="onSubmit_3df809d06a2b41a0b0df390ca6d45de1" data-size="normal"
+>
+                                    
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <iframe id="print_pdf" style="display: none;"></iframe>
+                    <div class="form-buttons-container">
+                        <div class="ui grid">
+                            <div class="seven wide mobile nine wide computer seven wide tablet column mobile hidden"></div>
+                            <div class="nine wide mobile seven wide computer nine wide tablet column">
+                                <div class="ui stackable three column grid mobile reversed">
+                                    <div class="five wide column">
+                                        <a class="ui button primary"
+                                   href="/" style="width:100%;">Cancel</a>
+                                    </div>
+                                    <div class="five wide column">
+                                        <button class="ui button primary" type="submit" name="submit_button" value="download" style="width:100%;">
+                                            <i class="icon file pdf"></i> PDF
+                                        </button>
+                                    </div>
+                                    <div class="six wide column">
+                                        <button class="ui button primary" type="submit" name="submit_button" value="print" style="width:100%;">
+                                            <i class="icon print"></i> Print
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+	</main>
+
+
+
+	<div class="ui vertical basic segment footer">
+		<div class="ui container center aligned">
+            <div class="ui container center aligned">
+                <img class="footer-logo" src="/static/svg/gcc-old-logo-white.svg" alt="gulf health council logo">
+            <div class="social-media-icons" >
+                <a href="https://www.instagram.com/ghc_gcc/channel/?hl=en"><img class="social-media-icons-colors"  src="/static/svg/instagram.svg" alt="instagram"></a>
+                <a href=" https://ar-ar.facebook.com/GHCouncil/"><img class="social-media-icons-colors"  src="/static/svg/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/ghc_gcc"><img class="social-media-icons-colors"  src="/static/svg/twitter.svg" alt="twitter"></a>
+                <a href="https://www.youtube.com/channel/UCrKbHYpmpC_OrAfZ5P_qZXA"><img class="social-media-icons-colors"  src="/static/svg/youtube.svg" alt="youtube"></a>
+            </div>
+			<div class="copyright">
+                <div class="copyright">
+                    <span>@ 2024 </span>
+                    Gulf Health Council. All rights reserved
+                </div>
+			
+		</div>
+	</div>
+
+
+    
+
+<script src="/static/jsi18n/en/djangojs.js"></script>
+
+    <script src="/static/vendor/jquery.min.js"></script>
+    <script src="/static/vendor/semantic/dist/semantic.min.js"></script>
+    <script src="/static/js/vendor/jquery.inputmask.min.js"></script>
+    <script src="/static/js/vendor/cropper.min.js"></script>
+    <script src="/static/js/vendor/jquery-cropper.min.js"></script>
+    <script src="/static/js/vendor/glide.min.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/table-config.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.ui.dropdown').dropdown();
+        $('.ui.dropdown.item').dropdown({on: 'hover'});
+        $('.ui.checkbox').checkbox();
+        $('.message .close')
+          .on('click', function() {
+            $(this)
+              .closest('.message')
+              .transition('fade');
+          });
+      });
+    </script>
+
+    <!-- start forms and widgets-specific -->
+    <script src="/static/vendor/semantic-ui-calendar/calendar.min.js"></script>
+    <script src="/static/vendor/semantic/dist/components/dropdown.js"></script>
+    <script src="/static/vendor/state-machine/state-machine.min.js"></script>
+    <script src="/static/js/calendar-widget.js"></script>
+    <script src="/static/js/vendor/moment.js"></script>
+    <script src="/static/js/components/single-dropdown-widget.js"></script>
+    <script src="/static/js/components/multiple-dropdown-widget.js"></script>
+    <script src="/static/js/captcha.js"></script>
+    <script src="/static/js/components/file-widget.js"></script>
+    <script src="/static/js/components/number-input-widget.js"></script>
+    <script src="/static/js/components/labeled-select-widget.js"></script>
+    <script src="/static/js/city-country-controls.js"></script>
+
+    <!-- end forms and widgets-specific -->
+
+
+
+	
+    <script src="/static/js/ays-beforeunload-shim.js"></script>
+    <script>
+    // country -> city map
+    CITIES = JSON.parse("{\u0022AF\u0022: [[2048, \u0022Kabul\u0022, \u0022AF\u0022]], \u0022DZ\u0022: [[2036, \u0022Algiers\u0022, \u0022DZ\u0022]], \u0022BH\u0022: [[110, \u0022manama\u0022, \u0022BH\u0022]], \u0022BD\u0022: [[2031, \u0022Barishal\u0022, \u0022BD\u0022], [81, \u0022Chitagong\u0022, \u0022BD\u0022], [2033, \u0022Cox\u0027s Bazar\u0022, \u0022BD\u0022], [2032, \u0022Cumilla\u0022, \u0022BD\u0022], [80, \u0022Dhaka\u0022, \u0022BD\u0022], [2030, \u0022Rajshahi\u0022, \u0022BD\u0022], [2059, \u0022Sherpur\u0022, \u0022BD\u0022], [83, \u0022Sylhet\u0022, \u0022BD\u0022]], \u0022BRF\u0022: [[157, \u0022Ouagadougou\u0022, \u0022BRF\u0022]], \u0022BR\u0022: [[155, \u0022Bujumbura\u0022, \u0022BR\u0022], [2037, \u0022Gitega\u0022, \u0022BR\u0022], [2053, \u0022Makamba\u0022, \u0022BR\u0022]], \u0022CM\u0022: [[2047, \u0022Yaounde\u0022, \u0022CM\u0022]], \u0022TD\u0022: [[2038, \u0022N\u0027Djamena\u0022, \u0022TD\u0022]], \u0022CHI\u0022: [[151, \u0022Beijing\u0022, \u0022CHI\u0022]], \u0022EGY\u0022: [[120, \u0022Alexandria\u0022, \u0022EGY\u0022], [87, \u0022Cairo\u0022, \u0022EGY\u0022]], \u0022ER\u0022: [[160, \u0022Asmara\u0022, \u0022ER\u0022]], \u0022ETH\u0022: [[2, \u0022Adama\u0022, \u0022ETH\u0022], [121, \u0022Addis Ababa\u0022, \u0022ETH\u0022]], \u0022GN\u0022: [[141, \u0022Accra\u0022, \u0022GN\u0022]], \u0022GU\u0022: [[166, \u0022Conakry\u0022, \u0022GU\u0022]], \u0022ACT\u0022: [[60, \u0022Ahmedabad\u0022, \u0022ACT\u0022], [61, \u0022Bangalore\u0022, \u0022ACT\u0022], [93, \u0022Calicut\u0022, \u0022ACT\u0022], [64, \u0022Chennai\u0022, \u0022ACT\u0022], [117, \u0022Cochin\u0022, \u0022ACT\u0022], [2019, \u0022Coimbatore\u0022, \u0022ACT\u0022], [1002, \u0022Delhi\u0022, \u0022ACT\u0022], [137, \u0022dimo\u0022, \u0022ACT\u0022], [132, \u0022Goa\u0022, \u0022ACT\u0022], [2015, \u0022Gorakhpur\u0022, \u0022ACT\u0022], [134, \u0022Hubli\u0022, \u0022ACT\u0022], [67, \u0022Hyderabad\u0022, \u0022ACT\u0022], [2026, \u0022Indore\u0022, \u0022ACT\u0022], [68, \u0022Jaipur\u0022, \u0022ACT\u0022], [65, \u0022Kochi\u0022, \u0022ACT\u0022], [133, \u0022Kolkata\u0022, \u0022ACT\u0022], [2020, \u0022Kutch\u0022, \u0022ACT\u0022], [62, \u0022Lucknow\u0022, \u0022ACT\u0022], [2027, \u0022Madurai\u0022, \u0022ACT\u0022], [99, \u0022Malappuram\u0022, \u0022ACT\u0022], [59, \u0022Mangalore\u0022, \u0022ACT\u0022], [97, \u0022Manjeri\u0022, \u0022ACT\u0022], [107, \u0022Margoa\u0022, \u0022ACT\u0022], [63, \u0022Mumbai\u0022, \u0022ACT\u0022], [66, \u0022New Delhi\u0022, \u0022ACT\u0022], [108, \u0022Panjim\u0022, \u0022ACT\u0022], [2021, \u0022Patna\u0022, \u0022ACT\u0022], [2017, \u0022Punjab\u0022, \u0022ACT\u0022], [72, \u0022Thalakkadathur\u0022, \u0022ACT\u0022], [101, \u0022Tirur\u0022, \u0022ACT\u0022], [70, \u0022Trichy\u0022, \u0022ACT\u0022], [69, \u0022Triuvananthapuram\u0022, \u0022ACT\u0022], [2028, \u0022Visakhapatnam\u0022, \u0022ACT\u0022]], \u0022IDN\u0022: [[86, \u0022Jakarta Selatan\u0022, \u0022IDN\u0022], [98, \u0022Malang\u0022, \u0022IDN\u0022], [131, \u0022Matram\u0022, \u0022IDN\u0022], [95, \u0022Surabaya\u0022, \u0022IDN\u0022]], \u0022IRQ\u0022: [[2050, \u0022Baghdad\u0022, \u0022IRQ\u0022]], \u0022IVC\u0022: [[158, \u0022Yamoussoukro\u0022, \u0022IVC\u0022]], \u0022JR\u0022: [[148, \u0022Amman\u0022, \u0022JR\u0022], [2051, \u0022Irbid\u0022, \u0022JR\u0022]], \u0022KN\u0022: [[2044, \u0022Eldoret\u0022, \u0022KN\u0022], [2045, \u0022Kakamega\u0022, \u0022KN\u0022], [2042, \u0022Kisumu\u0022, \u0022KN\u0022], [2046, \u0022Machakos\u0022, \u0022KN\u0022], [2041, \u0022Mombasa\u0022, \u0022KN\u0022], [140, \u0022Nairobi\u0022, \u0022KN\u0022], [2043, \u0022Nakuru\u0022, \u0022KN\u0022]], \u0022KW\u0022: [[111, \u0022Kuwait\u0022, \u0022KW\u0022]], \u0022LB\u0022: [[149, \u0022Beirut\u0022, \u0022LB\u0022]], \u0022MDG\u0022: [[146, \u0022Antananarivo\u0022, \u0022MDG\u0022]], \u0022MI\u0022: [[163, \u0022Bamako\u0022, \u0022MI\u0022]], \u0022MA\u0022: [[2039, \u0022Nouakchott\u0022, \u0022MA\u0022]], \u0022MR\u0022: [[152, \u0022Casablanca\u0022, \u0022MR\u0022], [153, \u0022Marrakech\u0022, \u0022MR\u0022], [147, \u0022Rabat\u0022, \u0022MR\u0022], [154, \u0022Tangier\u0022, \u0022MR\u0022]], \u0022NEP\u0022: [[89, \u0022Kathmandu\u0022, \u0022NEP\u0022], [82, \u0022Tripureshwor\u0022, \u0022NEP\u0022]], \u0022NG\u0022: [[164, \u0022Niamey\u0022, \u0022NG\u0022]], \u0022NIG\u0022: [[156, \u0022Abuja\u0022, \u0022NIG\u0022], [2054, \u0022Lagos state\u0022, \u0022NIG\u0022]], \u0022OM\u0022: [[112, \u0022muscat\u0022, \u0022OM\u0022], [2052, \u0022SHOUQ\u0022, \u0022OM\u0022]], \u0022PAK\u0022: [[91, \u0022Gujranwala\u0022, \u0022PAK\u0022], [2055, \u0022Gwadar\u0022, \u0022PAK\u0022], [73, \u0022Islamabad\u0022, \u0022PAK\u0022], [74, \u0022Karachi\u0022, \u0022PAK\u0022], [2058, \u0022Khuzdar\u0022, \u0022PAK\u0022], [75, \u0022Lahore\u0022, \u0022PAK\u0022], [76, \u0022Multan\u0022, \u0022PAK\u0022], [2057, \u0022Panjgur\u0022, \u0022PAK\u0022], [77, \u0022Peshawar\u0022, \u0022PAK\u0022], [92, \u0022Quetta\u0022, \u0022PAK\u0022], [90, \u0022Rawalpindi\u0022, \u0022PAK\u0022], [2025, \u0022Sialkot\u0022, \u0022PAK\u0022], [2056, \u0022Turbat\u0022, \u0022PAK\u0022]], \u0022PHL\u0022: [[104, \u0022Bacolod\u0022, \u0022PHL\u0022], [79, \u0022Cebu\u0022, \u0022PHL\u0022], [105, \u0022Davao\u0022, \u0022PHL\u0022], [144, \u0022Iloilo\u0022, \u0022PHL\u0022], [100, \u0022Makati\u0022, \u0022PHL\u0022], [102, \u0022Mandaluyong\u0022, \u0022PHL\u0022], [143, \u0022Mandaue\u0022, \u0022PHL\u0022], [78, \u0022Manila\u0022, \u0022PHL\u0022], [150, \u0022Mindanao\u0022, \u0022PHL\u0022], [103, \u0022Quezon\u0022, \u0022PHL\u0022], [142, \u0022Zamboanga\u0022, \u0022PHL\u0022]], \u0022QA\u0022: [[113, \u0022Doha\u0022, \u0022QA\u0022]], \u0022SA\u0022: [[6, \u0022Riyadh\u0022, \u0022SA\u0022]], \u0022SL\u0022: [[165, \u0022Freetown\u0022, \u0022SL\u0022]], \u0022so\u0022: [[2040, \u0022Mogadishu\u0022, \u0022so\u0022]], \u0022ZA\u0022: [[2035, \u0022Pretoria\u0022, \u0022ZA\u0022]], \u0022Sri\u0022: [[94, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [96, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [2018, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [2023, \u0022Anuradhapura\u0022, \u0022Sri\u0022], [84, \u0022Colombo\u0022, \u0022Sri\u0022], [2024, \u0022Kandy\u0022, \u0022Sri\u0022], [85, \u0022Kurunegala\u0022, \u0022Sri\u0022]], \u0022SUD\u0022: [[109, \u0022Khartoum\u0022, \u0022SUD\u0022]], \u0022SYR\u0022: [[119, \u0022Aleppo\u0022, \u0022SYR\u0022], [118, \u0022Damascus\u0022, \u0022SYR\u0022]], \u0022TNZ\u0022: [[168, \u0022Dar es Salaam\u0022, \u0022TNZ\u0022]], \u0022THI\u0022: [[162, \u0022Bangkok\u0022, \u0022THI\u0022]], \u0022TUN\u0022: [[161, \u0022Tunis\u0022, \u0022TUN\u0022]], \u0022TUR\u0022: [[167, \u0022Ankara\u0022, \u0022TUR\u0022], [2012, \u0022Antakya\u0022, \u0022TUR\u0022], [2013, \u0022Diyarbakir\u0022, \u0022TUR\u0022], [2011, \u0022Gaziantap\u0022, \u0022TUR\u0022], [169, \u0022Istanbul\u0022, \u0022TUR\u0022], [2014, \u0022Izmir\u0022, \u0022TUR\u0022]], \u0022UAE\u0022: [[115, \u0022Abu Dhabi\u0022, \u0022UAE\u0022]], \u0022UG\u0022: [[145, \u0022Kampala\u0022, \u0022UG\u0022]], \u0022VT\u0022: [[159, \u0022Hanoi\u0022, \u0022VT\u0022], [2034, \u0022Ho Chi Minh\u0022, \u0022VT\u0022]], \u0022YEM\u0022: [[2049, \u0022Sana\u0027a\u0022, \u0022YEM\u0022], [114, \u0022sanna\u0022, \u0022YEM\u0022]]}");
+    const optionTpl = '<option value="__val__">__label__</option>';
+    const $countryControl = $('#id_country');
+    const $cityControl = $('#id_city');
+    function buildOptions(items) {
+        let options = '';
+
+        if (!items) {
+            return options;
+        }
+
+        items.map(function (item) {
+            options += optionTpl
+                .replace('__val__', item[0])
+                .replace('__label__', item[1]);
+        });
+        return options;
+    }
+    function removeErrors($control) {
+        let $field = $control.closest('.field');
+        $field.removeClass('error');
+        $field.find('.field-error-message').remove();
+        $field.nextAll().filter($('.field-error-message')).remove();
+    }
+    // Listen to DOM events.
+    $countryControl.change( function () {
+        removeErrors($countryControl);
+        initCityControl();
+    });
+    function initCityControl() {
+        const val = $countryControl.val();
+        const $firstOption = $cityControl.find('option').first();
+        $firstOption.nextAll().remove();
+        console.log("Country: ",val)
+        if (!val) {
+            return
+        }
+
+        // Allowed cities.
+        const cities = CITIES[val];
+        console.log(cities)
+        if (!cities) {
+            return
+        }
+
+        // Render options.
+        let options = buildOptions(cities);
+        $firstOption.after(options);
+        $cityControl.change();
+    }
+    
+    CACHE_URL_TEMPLATE = "/cache/key_mock/"
+	</script>
+    <script src="/static/js/components/form_validation.js"></script>
+    
+        <script src="/static/js/auth-letter-form.js"></script>
+    
+	<link href="/static/vendor/semantic-ui-calendar/calendar.min.css" type="text/css" media="all" rel="stylesheet">
+
+</body>
+</html>

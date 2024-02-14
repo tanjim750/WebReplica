@@ -1,0 +1,2183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axcv6afvufi6/b/Rum-JS-Public/o/elastic-apm-rum.umd.min.js" crossorigin></script>
+
+  <script>
+    elasticApm.init({
+      serviceName: 'GCC-Frontend',
+      serverUrl: 'https://apm-lean.acuative-me.com:8200',
+      environment: 'Production',
+    })
+  </script>
+
+
+    <link rel="icon" type="image/x-icon" href="/static/svg/logo-favicon-light.svg">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146902071-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-146902071-1');
+    </script>
+
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Wafid | وافد</title>
+    <meta name ="description" content="Wafid is a program under the umbrella of the Gulf Health Council that enables individuals bound to work or reside in the GCC to book their medical check-up appointments.
+    وافد هو احدى برامج مجلس الصحة الخليجي غرضه توفير مواعيد الفحص الطبي للوافدين القادمين الى دول مجلس التعاون الخليجي بغرض العمل او الإقامة.">
+    <meta name="keywords" content="Wafid, GCC, GHC, Medical center, Gulf Cooperation Council States, Medical Examinations, health check-up, appointment, medical centers accreditation, Accreditation status">
+
+
+    <!-- ISO 3166-1-alpha-2 Flags style-->
+
+
+    <link rel="stylesheet" href="/static/country-flags/image_sprite/ip2location-image-sprite.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"  crossorigin=""/>
+
+
+	
+        
+
+            <link rel="stylesheet" href="/static/vendor/semantic/dist/semantic.min.css">
+            <link rel="stylesheet" href="/static/css/semantic-responsive.css">
+
+            <!-- Glide.js styles -->
+            <link rel="stylesheet" href="/static/css/vendor/glide.core.min.css">
+            <link rel="stylesheet" href="/static/css/vendor/glide.theme.min.css">
+
+            <!-- CropperJS styles -->
+            <link rel="stylesheet" href="/static/css/vendor/cropper.min.css">
+
+            <!-- Custom styles -->
+            <link rel="stylesheet" href="/static/css/main.css">
+            <link rel="stylesheet" href="/static/css/menu.css">
+            <link rel="stylesheet" href="/static/css/instant-notifications.css">
+
+            <!-- Components -->
+            <link rel="stylesheet" href="/static/css/components/breadcrumbs.css">
+            <link rel="stylesheet" href="/static/css/components/cards.css">
+            <link rel="stylesheet" href="/static/css/components/forms.css">
+            <link rel="stylesheet" href="/static/css/components/glide.css">
+            <link rel="stylesheet" href="/static/css/components/menu.css">
+            <link rel="stylesheet" href="/static/css/components/table.css">
+            <link rel="stylesheet" href="/static/css/components/message.css">
+            <link rel="stylesheet" href="/static/css/components/modal.css">
+            <link rel="stylesheet" href="/static/css/components/icons.css">
+        
+	
+	
+</head>
+<body>
+
+	
+		<div class="ui menu basic borderless gcc-menu">
+			
+                    <div class="item">
+					<a href="/" id="gcc-header-icon-continer" class="header item brand menu-lsc-fix">
+						<img class="ui image" src="/static/svg/logo.svg">
+					</a>
+                </div>
+                    
+
+                    	
+            <div class="ui container">
+                <div class="ui grid gcc-submenu-wrapper">
+            <div class="full wide column">
+                <div class="ui menu stackable gcc-submenu">
+                    <div class="ui container centered gcc-submenu-continer width-edit">
+                        
+
+
+
+<a class=" item" href="/">Home</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        GHC accreditation-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="/accreditation/apply/">Apply for accreditation </a>-->
+<!--            <a class="item"-->
+<!--               href="/accreditation/status/">Check accreditation status</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Examinations
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="/book-appointment/">Book an Appointment </a>
+            <a class="item"
+               href="/search-slip/">Appointment Slips</a>
+            <a class="item"
+               href="/medical-status-search/">Medical Examination Result</a>
+        </div>
+    </div>
+
+
+
+<!--<a class=" item"-->
+<!--   href="/medical-status-search/">Health Check-Up</a>-->
+
+<!--<a class=" item"-->
+<!--   href="/medical-center/medical-center/">Medical centers</a>-->
+
+
+    <div class="ui pointing dropdown item active-item">
+        Medical Centers
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="/medical-center/medical-center/">Wafid Medical Centers Accreditation</a>
+            <a class="item"
+               href="search.html">Medical Centers List</a>
+        </div>
+    </div>
+
+
+
+<a class=" item"
+   href="guidelines.html">Guidelines</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        Check status-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="/medical-status-search/">Check candidate status</a>-->
+<!--            <a class="item"-->
+<!--               href="certificate-search.html">Membership certeficate</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+<a class=" item"
+   href="faq.html">FAQs</a>
+<!--<a class="item" href="/static/pdf/Regulations%20of%20Medical%20Examination%20of%20Expatriates%20Coming%20to%20GCC%20States%20for%20Work%20or%20Residence.pdf"-->
+<!--   target="_blank">Rules and regulations</a>-->
+
+<a class=" item" href="contact-us.html">Contact Us</a>
+
+
+
+                        
+                            <a class="item mobile tablet only" href="login.html">Login</a>
+						
+
+                        
+                            <div class="item support-phone mobile tablet only">
+                                <img src="/static/svg/headset.svg" class="support-icon">
+                                <b>
+                                    <a href="tel:+966920023560">+966920023560</a>
+                                </b>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	        
+        </div>
+
+					<div class="right menu" style="padding-right: 3%">
+						
+						
+							<div class="item tablet or lower hidden">
+								<a class="ui secondary button" id="gcc-header-login-botton" href="login.html">Login</a>
+							</div>
+						
+
+                        <div class="mobile tablet only right menu menu-icon menu-lsc-fix">
+                            <button class="button basic" id="menubutton">
+                                <i class="bars icon"></i>
+                                <i class="x icon"></i>
+                            </button>
+                        </div>
+					</div>
+
+			
+		</div>
+	
+
+    
+    
+
+
+
+
+
+	<main class="">
+			
+    
+
+
+			
+
+    <div class="ui container content-container">
+        <div class="ui fluid card gcc-card">
+            <form action="" method="get" class="ui form gcc-slips-filter">
+                <div class="form-fields-container">
+                    <h2 class="ui header">Search tools</h2>
+                    <div class="field">
+                        <div class="two fields">
+                            
+<div class="field " >
+	
+		<label>
+			Country
+			
+		</label>
+	
+
+	
+		<select name="country" id="id_country">
+  <option value="all">Enter County</option>
+
+  <option value="BD">Bangladesh</option>
+
+  <option value="BR">Burundi</option>
+
+  <option value="EGY">Egypt</option>
+
+  <option value="ETH">Ethiopia</option>
+
+  <option value="GN">Ghana</option>
+
+  <option value="ACT">India</option>
+
+  <option value="IDN">Indonesia</option>
+
+  <option value="JR">Jordan</option>
+
+  <option value="KN">Kenya</option>
+
+  <option value="LB">Lebanon</option>
+
+  <option value="MI">Mali</option>
+
+  <option value="MR">Morocco</option>
+
+  <option value="NEP">Nepal</option>
+
+  <option value="NG">Niger</option>
+
+  <option value="NIG">Nigeria</option>
+
+  <option value="PAK">Pakistan</option>
+
+  <option value="PHL">Philippines</option>
+
+  <option value="SL">Sierra Leone</option>
+
+  <option value="Sri">Sri Lanka</option>
+
+  <option value="SUD">Sudan</option>
+
+  <option value="TNZ">Tanzania</option>
+
+  <option value="THI">Thailand</option>
+
+  <option value="TUR">Turkey</option>
+
+  <option value="UG">Uganda</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                            
+<div class="field " >
+	
+		<label>
+			City
+			
+		</label>
+	
+
+	
+		<select name="city" id="id_city">
+  <option value="" selected>Enter City</option>
+
+  <option value="94">---</option>
+
+  <option value="96">---</option>
+
+  <option value="2018">---</option>
+
+  <option value="115">Abu Dhabi</option>
+
+  <option value="156">Abuja</option>
+
+  <option value="141">Accra</option>
+
+  <option value="2">Adama</option>
+
+  <option value="121">Addis Ababa</option>
+
+  <option value="60">Ahmedabad</option>
+
+  <option value="119">Aleppo</option>
+
+  <option value="120">Alexandria</option>
+
+  <option value="2036">Algiers</option>
+
+  <option value="148">Amman</option>
+
+  <option value="167">Ankara</option>
+
+  <option value="2012">Antakya</option>
+
+  <option value="146">Antananarivo</option>
+
+  <option value="2023">Anuradhapura</option>
+
+  <option value="160">Asmara</option>
+
+  <option value="104">Bacolod</option>
+
+  <option value="2050">Baghdad</option>
+
+  <option value="163">Bamako</option>
+
+  <option value="61">Bangalore</option>
+
+  <option value="162">Bangkok</option>
+
+  <option value="2031">Barishal</option>
+
+  <option value="151">Beijing</option>
+
+  <option value="149">Beirut</option>
+
+  <option value="155">Bujumbura</option>
+
+  <option value="87">Cairo</option>
+
+  <option value="93">Calicut</option>
+
+  <option value="152">Casablanca</option>
+
+  <option value="79">Cebu</option>
+
+  <option value="64">Chennai</option>
+
+  <option value="81">Chitagong</option>
+
+  <option value="117">Cochin</option>
+
+  <option value="2019">Coimbatore</option>
+
+  <option value="84">Colombo</option>
+
+  <option value="166">Conakry</option>
+
+  <option value="2033">Cox&#x27;s Bazar</option>
+
+  <option value="2032">Cumilla</option>
+
+  <option value="118">Damascus</option>
+
+  <option value="168">Dar es Salaam</option>
+
+  <option value="105">Davao</option>
+
+  <option value="1002">Delhi</option>
+
+  <option value="80">Dhaka</option>
+
+  <option value="137">dimo</option>
+
+  <option value="2013">Diyarbakir</option>
+
+  <option value="113">Doha</option>
+
+  <option value="2044">Eldoret</option>
+
+  <option value="165">Freetown</option>
+
+  <option value="2011">Gaziantap</option>
+
+  <option value="2037">Gitega</option>
+
+  <option value="132">Goa</option>
+
+  <option value="2015">Gorakhpur</option>
+
+  <option value="91">Gujranwala</option>
+
+  <option value="2055">Gwadar</option>
+
+  <option value="159">Hanoi</option>
+
+  <option value="2034">Ho Chi Minh</option>
+
+  <option value="134">Hubli</option>
+
+  <option value="67">Hyderabad</option>
+
+  <option value="144">Iloilo</option>
+
+  <option value="2026">Indore</option>
+
+  <option value="2051">Irbid</option>
+
+  <option value="73">Islamabad</option>
+
+  <option value="169">Istanbul</option>
+
+  <option value="2014">Izmir</option>
+
+  <option value="68">Jaipur</option>
+
+  <option value="86">Jakarta Selatan</option>
+
+  <option value="2048">Kabul</option>
+
+  <option value="2045">Kakamega</option>
+
+  <option value="145">Kampala</option>
+
+  <option value="2024">Kandy</option>
+
+  <option value="74">Karachi</option>
+
+  <option value="89">Kathmandu</option>
+
+  <option value="109">Khartoum</option>
+
+  <option value="2058">Khuzdar</option>
+
+  <option value="2042">Kisumu</option>
+
+  <option value="65">Kochi</option>
+
+  <option value="133">Kolkata</option>
+
+  <option value="85">Kurunegala</option>
+
+  <option value="2020">Kutch</option>
+
+  <option value="111">Kuwait</option>
+
+  <option value="2054">Lagos state</option>
+
+  <option value="75">Lahore</option>
+
+  <option value="62">Lucknow</option>
+
+  <option value="2046">Machakos</option>
+
+  <option value="2027">Madurai</option>
+
+  <option value="2053">Makamba</option>
+
+  <option value="100">Makati</option>
+
+  <option value="98">Malang</option>
+
+  <option value="99">Malappuram</option>
+
+  <option value="110">manama</option>
+
+  <option value="102">Mandaluyong</option>
+
+  <option value="143">Mandaue</option>
+
+  <option value="59">Mangalore</option>
+
+  <option value="78">Manila</option>
+
+  <option value="97">Manjeri</option>
+
+  <option value="107">Margoa</option>
+
+  <option value="153">Marrakech</option>
+
+  <option value="131">Matram</option>
+
+  <option value="150">Mindanao</option>
+
+  <option value="2040">Mogadishu</option>
+
+  <option value="2041">Mombasa</option>
+
+  <option value="76">Multan</option>
+
+  <option value="63">Mumbai</option>
+
+  <option value="112">muscat</option>
+
+  <option value="140">Nairobi</option>
+
+  <option value="2043">Nakuru</option>
+
+  <option value="2038">N&#x27;Djamena</option>
+
+  <option value="66">New Delhi</option>
+
+  <option value="164">Niamey</option>
+
+  <option value="2039">Nouakchott</option>
+
+  <option value="157">Ouagadougou</option>
+
+  <option value="2057">Panjgur</option>
+
+  <option value="108">Panjim</option>
+
+  <option value="2021">Patna</option>
+
+  <option value="77">Peshawar</option>
+
+  <option value="2035">Pretoria</option>
+
+  <option value="2017">Punjab</option>
+
+  <option value="92">Quetta</option>
+
+  <option value="103">Quezon</option>
+
+  <option value="147">Rabat</option>
+
+  <option value="2030">Rajshahi</option>
+
+  <option value="90">Rawalpindi</option>
+
+  <option value="6">Riyadh</option>
+
+  <option value="2049">Sana&#x27;a</option>
+
+  <option value="114">sanna</option>
+
+  <option value="2059">Sherpur</option>
+
+  <option value="2052">SHOUQ</option>
+
+  <option value="2025">Sialkot</option>
+
+  <option value="95">Surabaya</option>
+
+  <option value="83">Sylhet</option>
+
+  <option value="154">Tangier</option>
+
+  <option value="72">Thalakkadathur</option>
+
+  <option value="101">Tirur</option>
+
+  <option value="70">Trichy</option>
+
+  <option value="82">Tripureshwor</option>
+
+  <option value="69">Triuvananthapuram</option>
+
+  <option value="161">Tunis</option>
+
+  <option value="2056">Turbat</option>
+
+  <option value="2028">Visakhapatnam</option>
+
+  <option value="158">Yamoussoukro</option>
+
+  <option value="2047">Yaounde</option>
+
+  <option value="142">Zamboanga</option>
+
+</select>
+	
+	
+	
+		
+	
+</div>
+
+                            
+<div class="field " >
+	
+		<label>
+			Medical center name
+			
+		</label>
+	
+
+	
+		<input type="text" name="name" placeholder="Enter Medical center name" maxlength="50" id="id_name">
+	
+	
+	
+		
+	
+</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-buttons-container">
+                    <div class="ui centered grid">
+                        <div class="seven wide mobile nine wide computer seven wide tablet column mobile hidden"></div>
+                        <div class="nine wide mobile seven wide computer nine wide tablet column">
+                            <div class="ui stackable two column grid mobile reversed">
+                                <div class="eight wide column">
+                                    <button class="ui secondary large basic fluid button" id="reset-btn" type="reset">Reset</button>
+                                </div>
+                                <div class="eight wide column">
+                                    <button class="ui primary large submit fluid button small-side-paddings" type="submit">Search
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+                
+
+            
+        </div>
+        
+
+
+
+	<div class="ui container table-container">
+		
+            
+                <div class="customizable-table-block" data-table-name="medical_center_public_patterns-search-medicalcenter">
+                    <div class="gear">
+                        <i class="cog icon"></i>
+                    </div>
+                    <div class="customizable-table-fields-list container hide">
+                        <ul>
+                        
+
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="name">
+                                        <span class="cbox">&nbsp;</span>
+                                        Medical center name
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="country">
+                                        <span class="cbox">&nbsp;</span>
+                                        Country
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="city">
+                                        <span class="cbox">&nbsp;</span>
+                                        City
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="address">
+                                        <span class="cbox">&nbsp;</span>
+                                        Address Line 1
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="address_2">
+                                        <span class="cbox">&nbsp;</span>
+                                        Address Line 2
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="phone_for_candidates">
+                                        <span class="cbox">&nbsp;</span>
+                                        Phone
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="email_for_candidates">
+                                        <span class="cbox">&nbsp;</span>
+                                        E-mail
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="web_site">
+                                        <span class="cbox">&nbsp;</span>
+                                        Web site
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="rating">
+                                        <span class="cbox">&nbsp;</span>
+                                        Rating
+                                    </label>
+                                </li>
+                            
+                        
+                            
+                                <li class="c-tbl-checkbox noselect" draggable="true">
+                                    <i class="icon bars"></i>
+                                    <label>
+                                        <input type="checkbox" value="working_time">
+                                        <span class="cbox">&nbsp;</span>
+                                        Time
+                                    </label>
+                                </li>
+                            
+                        
+                            <li class="c-tbl-checkbox noselect tbl-last-elem-hidden">
+                                <label>
+                                    <br/>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            
+            <div class="table-wrapper">
+                <table class="ui celled padded table">
+                    
+                        
+                            <thead  >
+                            <tr>
+                                
+                                    <th class="asc orderable tbl-cfg-hidable-name tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=-name"><i class="sort up icon"></i>Medical center name</a>
+                                        
+                                    </th>
+                                
+                                    <th class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                        
+                                            Country
+                                        
+                                    </th>
+                                
+                                    <th class="orderable tbl-cfg-hidable-city tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=city"><i class="sort  icon"></i>City</a>
+                                        
+                                    </th>
+                                
+                                    <th class="orderable tbl-cfg-hidable-address tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=address"><i class="sort  icon"></i>Address Line 1</a>
+                                        
+                                    </th>
+                                
+                                    <th class="orderable tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=address_2"><i class="sort  icon"></i>Address Line 2</a>
+                                        
+                                    </th>
+                                
+                                    <th class="orderable tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=phone_for_candidates"><i class="sort  icon"></i>Phone</a>
+                                        
+                                    </th>
+                                
+                                    <th class="orderable tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=email_for_candidates"><i class="sort  icon"></i>E-mail</a>
+                                        
+                                    </th>
+                                
+                                    <th class="orderable tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=web_site"><i class="sort  icon"></i>Web site</a>
+                                        
+                                    </th>
+                                
+                                    <th class="orderable tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                        
+                                            <a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;sort=rating"><i class="sort  icon"></i>Rating</a>
+                                        
+                                    </th>
+                                
+                                    <th class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                        
+                                            Time
+                                        
+                                    </th>
+                                
+                            </tr>
+                            </thead>
+                        
+                    
+                    
+                        <tbody >
+                        
+                            
+                            
+                                <tr class="even">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            A to Z Diagnostic Centre</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-in"></span>
+<p class="center aligned" style="margin-top: 5px">India</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Mumbai</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            1st Floor, Harchandrai House 81, Queens Road, Marine Lines (E), Mumbai - India</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +912222088263</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="92f3e6fde8f6f1bcffe7fff0f3fbd2f5fff3fbfebcf1fdff">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i><i class="star outline icon title="Rating""></i>3</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="odd">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            A. K. Diagnostic Center</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-in"></span>
+<p class="center aligned" style="margin-top: 5px">India</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Jaipur</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            Plot No A-45 Shastri Nagar Main Road. Jaipur Rajasthan  PIN 302016 INDIA</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +911412301647</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="e0818b848981878e8f93948983bf938881939492898e818781928a9092a09981888f8fce838fce898e">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i>4</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 2:05 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="even">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            A. Rahman Medical Center</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-bd"></span>
+<p class="center aligned" style="margin-top: 5px">Bangladesh</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Sylhet</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            Averest Center,  1st Floor, Noberun-71,  Sahajalalupshar Road,  Sylhet – Bangladesh</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +880821760841</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="741506151c19151a19174543341319151d185a171b19">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i><i class="star outline icon title="Rating""></i>3</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="odd">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            ABC Diagnostic Center</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-bd"></span>
+<p class="center aligned" style="margin-top: 5px">Bangladesh</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Sylhet</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            Chowhatta Sylhet</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +0821721725</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="98f9fafbfcf1f9fff6f7ebecf1fbfbfdf6eceafdd8e1f9f0f7f7b6fbf7f5">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i><i class="star outline icon title="Rating""></i>3</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="even">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            Accubaq Diagnostic</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-pk"></span>
+<p class="center aligned" style="margin-top: 5px">Pakistan</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Karachi</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            Showroom # 1,2,3,4 Al Madina Tower, Plot 15-A PECHS</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            Block 6 Main Shahrah e Faisal</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +922134325156</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="0263616177606373666b63656c6d71766b6142656f636b6e2c616d6f">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            https://www.accubaq.com</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i><i class="star outline icon title="Rating""></i>3</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 2:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 2:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 2:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 2:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 1:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="odd">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            ACE Diagnostics</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-in"></span>
+<p class="center aligned" style="margin-top: 5px">India</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Jaipur</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            15-16 Janpath, Shysm Nagar –  Jaipur 302019 – India</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +911414106243</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="e0818385848981878e8f9394898393a0878d81898cce838f8d">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i>4</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 2:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="even">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            ACE Diagnostics - Ahmedabad</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-in"></span>
+<p class="center aligned" style="margin-top: 5px">India</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Ahmedabad</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            Block –F (Shop 1, 46),  Ground Floor,  SUMEL 11 Building Indian Textiles Plaza Opp. Namaste Circle, Shahibaug</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +07948484833</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="98f9fbfdfcf1f9fff6f7ebecf1fbebb6f9f0f5fdfcf9faf9fcd8fff5f9f1f4b6fbf7f5">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i>4</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="odd">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            Adeena Diagnostic Center</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-pk"></span>
+<p class="center aligned" style="margin-top: 5px">Pakistan</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Peshawar</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            Noor Plaza Arbab Road Stop University Road Peshawar</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            Noor Plaza Arbab Road Stop University Road Peshawar</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +92915700563</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="f69f989099b6979295d8998491d8869d">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            http://adc.org.pk/</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i>4</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            8:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            8:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            8:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            8:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            8:30 AM - 3:30 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="even">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            ADVANCE HEALTH CARE</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-bd"></span>
+<p class="center aligned" style="margin-top: 5px">Bangladesh</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Dhaka</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            K-40/2/A, jogonnathpur, progoti soroni, Vatara</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            Dhaka-1229</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            +8801958323200</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="c7aea9a1a887a6a3b1a6a9a4a2afa2a6abb3afa4a6b5a2a5a3e9a4a8aa">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            https://advancehealthcarebd.com</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i><i class="star outline icon title="Rating""></i><i class="star outline icon title="Rating""></i>2</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            9:00 AM - 5:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                            
+                            
+                                <tr class="odd">
+                                    
+                                        <td class="tbl-cfg-hidable-name tbl-cfg-orderable">
+                                            Advanced Diagnostic Centre</td>
+                                    
+                                        <td class="tbl-cfg-hidable-country tbl-cfg-orderable">
+                                            <span class="ip2location-flag-32 flag-square-rounded country-flag flag-in"></span>
+<p class="center aligned" style="margin-top: 5px">India</p></td>
+                                    
+                                        <td class="tbl-cfg-hidable-city tbl-cfg-orderable">
+                                            Jaipur</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address tbl-cfg-orderable">
+                                            1st Floor,Rotary Bhawan, Off.Church Road,M.I.ROAD, Behind Sangam Tower, Jaipur-302001, India.</td>
+                                    
+                                        <td class="tbl-cfg-hidable-address_2 tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-phone_for_candidates tbl-cfg-orderable">
+                                            00918766122666</td>
+                                    
+                                        <td class="tbl-cfg-hidable-email_for_candidates tbl-cfg-orderable">
+                                            <a href="email-protection.html" class="__cf_email__" data-cfemail="2f4e4b594c4a415b5d4a6f48424e4643014c4042">[email&#160;protected]</a></td>
+                                    
+                                        <td class="tbl-cfg-hidable-web_site tbl-cfg-orderable">
+                                            —</td>
+                                    
+                                        <td class="tbl-cfg-hidable-rating tbl-cfg-orderable">
+                                            <i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star icon yellow" title="Rating"></i><i class="star outline icon title="Rating""></i>4</td>
+                                    
+                                        <td class="tbl-cfg-hidable-working_time tbl-cfg-orderable">
+                                            
+<i class="clock icon outline blue working-time" data-html='<table class="ui very basic table working-time-table">
+    <tbody>
+    
+    <tr>
+        <td data-label="Day">monday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">tuesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">wednesday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">thursday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">friday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 4:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">saturday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            10:00 AM - 2:00 PM
+            
+            </span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td data-label="Day">sunday</td>
+        <td data-label="Time"><span class="working-time-column">
+            
+            Closed
+            
+            </span>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+' data-variation="wide"></i>
+
+</td>
+                                    
+                                </tr>
+                            
+                        
+                        </tbody>
+                    
+                    
+                        <tfoot >
+                        
+                        </tfoot>
+                    
+                </table>
+            </div>
+		
+
+		
+			
+				<div class="pagination">
+					<div class="ui grid">
+						<div class="row">
+							<div class="eight wide column">
+								<div class="ui compact selection dropdown selection-dropdown">
+									<i class="dropdown icon"></i>
+									<div class="text">10</div>
+									<div class="menu">
+										<a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;per_page=10" class="item">10</a>
+										<a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;per_page=20" class="item">20</a>
+										<a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;per_page=50" class="item">50</a>
+									</div>
+								</div>
+								<span class="pagination-status">
+						Show 1 to 10 of 547 entries
+
+		            </span>
+							</div>
+							<div class="eight wide column">
+								
+									<div class="ui right floated pagination menu">
+										
+											<a href="#"
+											   class="ui icon button disabled pagination-icon">
+												<i class="angle double left icon"></i>
+											</a>
+											<a href="#"
+											   class="ui icon button disabled pagination-icon">
+												<i class="angle left icon"></i>
+											</a>
+										
+
+										
+											<a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;page=2"
+											   class="ui icon button pagination-icon">
+												<i class="angle right icon"></i>
+											</a>
+											<a href="?accept=%2A%2F%2A&amp;accept-encoding=gzip%2C+deflate%2C+br&amp;accept-language=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&amp;content-length=0&amp;sec-ch-ua=%22Chromium%22%3Bv%3D%22110%22%2C+%22Not+A%28Brand%22%3Bv%3D%2224%22%2C+%22Google+Chrome%22%3Bv%3D%22110%22&amp;sec-ch-ua-mobile=%3F1&amp;sec-ch-ua-platform=%22Android%22&amp;sec-fetch-dest=empty&amp;sec-fetch-mode=no-cors&amp;sec-fetch-site=cross-site&amp;user-agent=Mozilla%2F5.0+%28Linux%3B+Android+6.0%3B+Nexus+5+Build%2FMRA58N%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F110.0.0.0+Mobile+Safari%2F537.36&amp;page=55"
+											   class="ui icon button pagination-icon">
+												<i class="angle double right icon"></i>
+											</a>
+										
+									</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		
+	</div>
+
+
+    </div>
+
+	</main>
+
+
+
+	<div class="ui vertical basic segment footer">
+		<div class="ui container center aligned">
+            <div class="ui container center aligned">
+                <img class="footer-logo" src="/static/svg/gcc-old-logo-white.svg" alt="gulf health council logo">
+            <div class="social-media-icons" >
+                <a href="https://www.instagram.com/ghc_gcc/channel/?hl=en"><img class="social-media-icons-colors"  src="/static/svg/instagram.svg" alt="instagram"></a>
+                <a href=" https://ar-ar.facebook.com/GHCouncil/"><img class="social-media-icons-colors"  src="/static/svg/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/ghc_gcc"><img class="social-media-icons-colors"  src="/static/svg/twitter.svg" alt="twitter"></a>
+                <a href="https://www.youtube.com/channel/UCrKbHYpmpC_OrAfZ5P_qZXA"><img class="social-media-icons-colors"  src="/static/svg/youtube.svg" alt="youtube"></a>
+            </div>
+			<div class="copyright">
+                <div class="copyright">
+                    <span>@ 2024 </span>
+                    Gulf Health Council. All rights reserved
+                </div>
+			
+		</div>
+	</div>
+
+
+    
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/jsi18n/en/djangojs.js"></script>
+
+    <script src="/static/vendor/jquery.min.js"></script>
+    <script src="/static/vendor/semantic/dist/semantic.min.js"></script>
+    <script src="/static/js/vendor/jquery.inputmask.min.js"></script>
+    <script src="/static/js/vendor/cropper.min.js"></script>
+    <script src="/static/js/vendor/jquery-cropper.min.js"></script>
+    <script src="/static/js/vendor/glide.min.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/table-config.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.ui.dropdown').dropdown();
+        $('.ui.dropdown.item').dropdown({on: 'hover'});
+        $('.ui.checkbox').checkbox();
+        $('.message .close')
+          .on('click', function() {
+            $(this)
+              .closest('.message')
+              .transition('fade');
+          });
+      });
+    </script>
+
+    <!-- start forms and widgets-specific -->
+    <script src="/static/vendor/semantic-ui-calendar/calendar.min.js"></script>
+    <script src="/static/vendor/semantic/dist/components/dropdown.js"></script>
+    <script src="/static/vendor/state-machine/state-machine.min.js"></script>
+    <script src="/static/js/calendar-widget.js"></script>
+    <script src="/static/js/vendor/moment.js"></script>
+    <script src="/static/js/components/single-dropdown-widget.js"></script>
+    <script src="/static/js/components/multiple-dropdown-widget.js"></script>
+    <script src="/static/js/captcha.js"></script>
+    <script src="/static/js/components/file-widget.js"></script>
+    <script src="/static/js/components/number-input-widget.js"></script>
+    <script src="/static/js/components/labeled-select-widget.js"></script>
+    <script src="/static/js/city-country-controls.js"></script>
+
+    <!-- end forms and widgets-specific -->
+
+
+
+	<script>
+    // country -> city map
+    CITIES = JSON.parse('{\u0022AF\u0022: [[2048, \u0022Kabul\u0022, \u0022AF\u0022]], \u0022DZ\u0022: [[2036, \u0022Algiers\u0022, \u0022DZ\u0022]], \u0022BH\u0022: [[110, \u0022manama\u0022, \u0022BH\u0022]], \u0022BD\u0022: [[2031, \u0022Barishal\u0022, \u0022BD\u0022], [81, \u0022Chitagong\u0022, \u0022BD\u0022], [2033, \u0022Cox\u0027s Bazar\u0022, \u0022BD\u0022], [2032, \u0022Cumilla\u0022, \u0022BD\u0022], [80, \u0022Dhaka\u0022, \u0022BD\u0022], [2030, \u0022Rajshahi\u0022, \u0022BD\u0022], [2059, \u0022Sherpur\u0022, \u0022BD\u0022], [83, \u0022Sylhet\u0022, \u0022BD\u0022]], \u0022BRF\u0022: [[157, \u0022Ouagadougou\u0022, \u0022BRF\u0022]], \u0022BR\u0022: [[155, \u0022Bujumbura\u0022, \u0022BR\u0022], [2037, \u0022Gitega\u0022, \u0022BR\u0022], [2053, \u0022Makamba\u0022, \u0022BR\u0022]], \u0022CM\u0022: [[2047, \u0022Yaounde\u0022, \u0022CM\u0022]], \u0022TD\u0022: [[2038, \u0022N\u0027Djamena\u0022, \u0022TD\u0022]], \u0022CHI\u0022: [[151, \u0022Beijing\u0022, \u0022CHI\u0022]], \u0022EGY\u0022: [[120, \u0022Alexandria\u0022, \u0022EGY\u0022], [87, \u0022Cairo\u0022, \u0022EGY\u0022]], \u0022ER\u0022: [[160, \u0022Asmara\u0022, \u0022ER\u0022]], \u0022ETH\u0022: [[2, \u0022Adama\u0022, \u0022ETH\u0022], [121, \u0022Addis Ababa\u0022, \u0022ETH\u0022]], \u0022GN\u0022: [[141, \u0022Accra\u0022, \u0022GN\u0022]], \u0022GU\u0022: [[166, \u0022Conakry\u0022, \u0022GU\u0022]], \u0022ACT\u0022: [[60, \u0022Ahmedabad\u0022, \u0022ACT\u0022], [61, \u0022Bangalore\u0022, \u0022ACT\u0022], [93, \u0022Calicut\u0022, \u0022ACT\u0022], [64, \u0022Chennai\u0022, \u0022ACT\u0022], [117, \u0022Cochin\u0022, \u0022ACT\u0022], [2019, \u0022Coimbatore\u0022, \u0022ACT\u0022], [1002, \u0022Delhi\u0022, \u0022ACT\u0022], [137, \u0022dimo\u0022, \u0022ACT\u0022], [132, \u0022Goa\u0022, \u0022ACT\u0022], [2015, \u0022Gorakhpur\u0022, \u0022ACT\u0022], [134, \u0022Hubli\u0022, \u0022ACT\u0022], [67, \u0022Hyderabad\u0022, \u0022ACT\u0022], [2026, \u0022Indore\u0022, \u0022ACT\u0022], [68, \u0022Jaipur\u0022, \u0022ACT\u0022], [65, \u0022Kochi\u0022, \u0022ACT\u0022], [133, \u0022Kolkata\u0022, \u0022ACT\u0022], [2020, \u0022Kutch\u0022, \u0022ACT\u0022], [62, \u0022Lucknow\u0022, \u0022ACT\u0022], [2027, \u0022Madurai\u0022, \u0022ACT\u0022], [99, \u0022Malappuram\u0022, \u0022ACT\u0022], [59, \u0022Mangalore\u0022, \u0022ACT\u0022], [97, \u0022Manjeri\u0022, \u0022ACT\u0022], [107, \u0022Margoa\u0022, \u0022ACT\u0022], [63, \u0022Mumbai\u0022, \u0022ACT\u0022], [66, \u0022New Delhi\u0022, \u0022ACT\u0022], [108, \u0022Panjim\u0022, \u0022ACT\u0022], [2021, \u0022Patna\u0022, \u0022ACT\u0022], [2017, \u0022Punjab\u0022, \u0022ACT\u0022], [72, \u0022Thalakkadathur\u0022, \u0022ACT\u0022], [101, \u0022Tirur\u0022, \u0022ACT\u0022], [70, \u0022Trichy\u0022, \u0022ACT\u0022], [69, \u0022Triuvananthapuram\u0022, \u0022ACT\u0022], [2028, \u0022Visakhapatnam\u0022, \u0022ACT\u0022]], \u0022IDN\u0022: [[86, \u0022Jakarta Selatan\u0022, \u0022IDN\u0022], [98, \u0022Malang\u0022, \u0022IDN\u0022], [131, \u0022Matram\u0022, \u0022IDN\u0022], [95, \u0022Surabaya\u0022, \u0022IDN\u0022]], \u0022IRQ\u0022: [[2050, \u0022Baghdad\u0022, \u0022IRQ\u0022]], \u0022IVC\u0022: [[158, \u0022Yamoussoukro\u0022, \u0022IVC\u0022]], \u0022JR\u0022: [[148, \u0022Amman\u0022, \u0022JR\u0022], [2051, \u0022Irbid\u0022, \u0022JR\u0022]], \u0022KN\u0022: [[2044, \u0022Eldoret\u0022, \u0022KN\u0022], [2045, \u0022Kakamega\u0022, \u0022KN\u0022], [2042, \u0022Kisumu\u0022, \u0022KN\u0022], [2046, \u0022Machakos\u0022, \u0022KN\u0022], [2041, \u0022Mombasa\u0022, \u0022KN\u0022], [140, \u0022Nairobi\u0022, \u0022KN\u0022], [2043, \u0022Nakuru\u0022, \u0022KN\u0022]], \u0022KW\u0022: [[111, \u0022Kuwait\u0022, \u0022KW\u0022]], \u0022LB\u0022: [[149, \u0022Beirut\u0022, \u0022LB\u0022]], \u0022MDG\u0022: [[146, \u0022Antananarivo\u0022, \u0022MDG\u0022]], \u0022MI\u0022: [[163, \u0022Bamako\u0022, \u0022MI\u0022]], \u0022MA\u0022: [[2039, \u0022Nouakchott\u0022, \u0022MA\u0022]], \u0022MR\u0022: [[152, \u0022Casablanca\u0022, \u0022MR\u0022], [153, \u0022Marrakech\u0022, \u0022MR\u0022], [147, \u0022Rabat\u0022, \u0022MR\u0022], [154, \u0022Tangier\u0022, \u0022MR\u0022]], \u0022NEP\u0022: [[89, \u0022Kathmandu\u0022, \u0022NEP\u0022], [82, \u0022Tripureshwor\u0022, \u0022NEP\u0022]], \u0022NG\u0022: [[164, \u0022Niamey\u0022, \u0022NG\u0022]], \u0022NIG\u0022: [[156, \u0022Abuja\u0022, \u0022NIG\u0022], [2054, \u0022Lagos state\u0022, \u0022NIG\u0022]], \u0022OM\u0022: [[112, \u0022muscat\u0022, \u0022OM\u0022], [2052, \u0022SHOUQ\u0022, \u0022OM\u0022]], \u0022PAK\u0022: [[91, \u0022Gujranwala\u0022, \u0022PAK\u0022], [2055, \u0022Gwadar\u0022, \u0022PAK\u0022], [73, \u0022Islamabad\u0022, \u0022PAK\u0022], [74, \u0022Karachi\u0022, \u0022PAK\u0022], [2058, \u0022Khuzdar\u0022, \u0022PAK\u0022], [75, \u0022Lahore\u0022, \u0022PAK\u0022], [76, \u0022Multan\u0022, \u0022PAK\u0022], [2057, \u0022Panjgur\u0022, \u0022PAK\u0022], [77, \u0022Peshawar\u0022, \u0022PAK\u0022], [92, \u0022Quetta\u0022, \u0022PAK\u0022], [90, \u0022Rawalpindi\u0022, \u0022PAK\u0022], [2025, \u0022Sialkot\u0022, \u0022PAK\u0022], [2056, \u0022Turbat\u0022, \u0022PAK\u0022]], \u0022PHL\u0022: [[104, \u0022Bacolod\u0022, \u0022PHL\u0022], [79, \u0022Cebu\u0022, \u0022PHL\u0022], [105, \u0022Davao\u0022, \u0022PHL\u0022], [144, \u0022Iloilo\u0022, \u0022PHL\u0022], [100, \u0022Makati\u0022, \u0022PHL\u0022], [102, \u0022Mandaluyong\u0022, \u0022PHL\u0022], [143, \u0022Mandaue\u0022, \u0022PHL\u0022], [78, \u0022Manila\u0022, \u0022PHL\u0022], [150, \u0022Mindanao\u0022, \u0022PHL\u0022], [103, \u0022Quezon\u0022, \u0022PHL\u0022], [142, \u0022Zamboanga\u0022, \u0022PHL\u0022]], \u0022QA\u0022: [[113, \u0022Doha\u0022, \u0022QA\u0022]], \u0022SA\u0022: [[6, \u0022Riyadh\u0022, \u0022SA\u0022]], \u0022SL\u0022: [[165, \u0022Freetown\u0022, \u0022SL\u0022]], \u0022so\u0022: [[2040, \u0022Mogadishu\u0022, \u0022so\u0022]], \u0022ZA\u0022: [[2035, \u0022Pretoria\u0022, \u0022ZA\u0022]], \u0022Sri\u0022: [[94, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [96, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [2018, \u0022\u002D\u002D\u002D\u0022, \u0022Sri\u0022], [2023, \u0022Anuradhapura\u0022, \u0022Sri\u0022], [84, \u0022Colombo\u0022, \u0022Sri\u0022], [2024, \u0022Kandy\u0022, \u0022Sri\u0022], [85, \u0022Kurunegala\u0022, \u0022Sri\u0022]], \u0022SUD\u0022: [[109, \u0022Khartoum\u0022, \u0022SUD\u0022]], \u0022SYR\u0022: [[119, \u0022Aleppo\u0022, \u0022SYR\u0022], [118, \u0022Damascus\u0022, \u0022SYR\u0022]], \u0022TNZ\u0022: [[168, \u0022Dar es Salaam\u0022, \u0022TNZ\u0022]], \u0022THI\u0022: [[162, \u0022Bangkok\u0022, \u0022THI\u0022]], \u0022TUN\u0022: [[161, \u0022Tunis\u0022, \u0022TUN\u0022]], \u0022TUR\u0022: [[167, \u0022Ankara\u0022, \u0022TUR\u0022], [2012, \u0022Antakya\u0022, \u0022TUR\u0022], [2013, \u0022Diyarbakir\u0022, \u0022TUR\u0022], [2011, \u0022Gaziantap\u0022, \u0022TUR\u0022], [169, \u0022Istanbul\u0022, \u0022TUR\u0022], [2014, \u0022Izmir\u0022, \u0022TUR\u0022]], \u0022UAE\u0022: [[115, \u0022Abu Dhabi\u0022, \u0022UAE\u0022]], \u0022UG\u0022: [[145, \u0022Kampala\u0022, \u0022UG\u0022]], \u0022VT\u0022: [[159, \u0022Hanoi\u0022, \u0022VT\u0022], [2034, \u0022Ho Chi Minh\u0022, \u0022VT\u0022]], \u0022YEM\u0022: [[2049, \u0022Sana\u0027a\u0022, \u0022YEM\u0022], [114, \u0022sanna\u0022, \u0022YEM\u0022]]}');
+    $('.clock.working-time').popup({
+        on    : 'click',
+        position: 'left center'
+    });
+
+	</script>
+    
+    
+	    <script src="/static/js/city-country-controls.js"></script>
+    
+    
+
+</body>
+</html>

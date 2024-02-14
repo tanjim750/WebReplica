@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axcv6afvufi6/b/Rum-JS-Public/o/elastic-apm-rum.umd.min.js" crossorigin></script>
+
+  <script>
+    elasticApm.init({
+      serviceName: 'GCC-Frontend',
+      serverUrl: 'https://apm-lean.acuative-me.com:8200',
+      environment: 'Production',
+    })
+  </script>
+
+
+    <link rel="icon" type="image/x-icon" href="/static/svg/logo-favicon-light.svg">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146902071-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-146902071-1');
+    </script>
+
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Wafid | وافد</title>
+    <meta name ="description" content="Wafid is a program under the umbrella of the Gulf Health Council that enables individuals bound to work or reside in the GCC to book their medical check-up appointments.
+    وافد هو احدى برامج مجلس الصحة الخليجي غرضه توفير مواعيد الفحص الطبي للوافدين القادمين الى دول مجلس التعاون الخليجي بغرض العمل او الإقامة.">
+    <meta name="keywords" content="Wafid, GCC, GHC, Medical center, Gulf Cooperation Council States, Medical Examinations, health check-up, appointment, medical centers accreditation, Accreditation status">
+
+
+    <!-- ISO 3166-1-alpha-2 Flags style-->
+
+
+    <link rel="stylesheet" href="/static/country-flags/image_sprite/ip2location-image-sprite.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"  crossorigin=""/>
+
+
+	
+    
+        
+
+            <link rel="stylesheet" href="/static/vendor/semantic/dist/semantic.min.css">
+            <link rel="stylesheet" href="/static/css/semantic-responsive.css">
+
+            <!-- Glide.js styles -->
+            <link rel="stylesheet" href="/static/css/vendor/glide.core.min.css">
+            <link rel="stylesheet" href="/static/css/vendor/glide.theme.min.css">
+
+            <!-- CropperJS styles -->
+            <link rel="stylesheet" href="/static/css/vendor/cropper.min.css">
+
+            <!-- Custom styles -->
+            <link rel="stylesheet" href="/static/css/main.css">
+            <link rel="stylesheet" href="/static/css/menu.css">
+            <link rel="stylesheet" href="/static/css/instant-notifications.css">
+
+            <!-- Components -->
+            <link rel="stylesheet" href="/static/css/components/breadcrumbs.css">
+            <link rel="stylesheet" href="/static/css/components/cards.css">
+            <link rel="stylesheet" href="/static/css/components/forms.css">
+            <link rel="stylesheet" href="/static/css/components/glide.css">
+            <link rel="stylesheet" href="/static/css/components/menu.css">
+            <link rel="stylesheet" href="/static/css/components/table.css">
+            <link rel="stylesheet" href="/static/css/components/message.css">
+            <link rel="stylesheet" href="/static/css/components/modal.css">
+            <link rel="stylesheet" href="/static/css/components/icons.css">
+        
+	
+    
+	    <link rel="stylesheet" href="/static/css/pages/guidelines.css">
+	    <link rel="stylesheet" href="/static/css/pages/medical-centers.css">
+        <link rel="stylesheet" href="/static/css/components/glide.css">
+    
+
+	
+</head>
+<body>
+
+	
+		<div class="ui menu basic borderless gcc-menu">
+			
+                    <div class="item">
+					<a href="/" id="gcc-header-icon-continer" class="header item brand menu-lsc-fix">
+						<img class="ui image" src="/static/svg/logo.svg">
+					</a>
+                </div>
+                    
+
+                    	
+            <div class="ui container">
+                <div class="ui grid gcc-submenu-wrapper">
+            <div class="full wide column">
+                <div class="ui menu stackable gcc-submenu">
+                    <div class="ui container centered gcc-submenu-continer width-edit">
+                        
+
+
+
+<a class=" item" href="/">Home</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        GHC accreditation-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="apply.html">Apply for accreditation </a>-->
+<!--            <a class="item"-->
+<!--               href="status.html">Check accreditation status</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+
+
+    <div class="ui pointing dropdown item None">
+        Medical Examinations
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="book-appointment.html">Book an Appointment </a>
+            <a class="item"
+               href="search-slip.html">Appointment Slips</a>
+            <a class="item"
+               href="medical-status-search.html">Medical Examination Result</a>
+        </div>
+    </div>
+
+
+
+<!--<a class=" item"-->
+<!--   href="medical-status-search.html">Health Check-Up</a>-->
+
+<!--<a class="active-item item"-->
+<!--   href="1017medical-center.html">Medical centers</a>-->
+
+
+    <div class="ui pointing dropdown item active-item">
+        Medical Centers
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"
+               href="1017medical-center.html">Wafid Medical Centers Accreditation</a>
+            <a class="item"
+               href="4432search.html">Medical Centers List</a>
+        </div>
+    </div>
+
+
+
+<a class=" item"
+   href="3708guidelines.html">Guidelines</a>
+
+<!---->
+<!--    <div class="ui pointing dropdown item None">-->
+<!--        Check status-->
+<!--        <i class="dropdown icon"></i>-->
+<!--        <div class="menu">-->
+<!--            <a class="item"-->
+<!--               href="medical-status-search.html">Check candidate status</a>-->
+<!--            <a class="item"-->
+<!--               href="2955certificate-search.html">Membership certeficate</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+
+<a class=" item"
+   href="1519faq.html">FAQs</a>
+<!--<a class="item" href="/static/pdf/Regulations%20of%20Medical%20Examination%20of%20Expatriates%20Coming%20to%20GCC%20States%20for%20Work%20or%20Residence.pdf"-->
+<!--   target="_blank">Rules and regulations</a>-->
+
+<a class=" item" href="4713contact-us.html">Contact Us</a>
+
+
+
+                        
+                            <a class="item mobile tablet only" href="319login.html">Login</a>
+						
+
+                        
+                            <div class="item support-phone mobile tablet only">
+                                <img src="/static/svg/headset.svg" class="support-icon">
+                                <b>
+                                    <a href="tel:+966920023560">+966920023560</a>
+                                </b>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	        
+        </div>
+
+					<div class="right menu" style="padding-right: 3%">
+						
+						
+							<div class="item tablet or lower hidden">
+								<a class="ui secondary button" id="gcc-header-login-botton" href="319login.html">Login</a>
+							</div>
+						
+
+                        <div class="mobile tablet only right menu menu-icon menu-lsc-fix">
+                            <button class="button basic" id="menubutton">
+                                <i class="bars icon"></i>
+                                <i class="x icon"></i>
+                            </button>
+                        </div>
+					</div>
+
+			
+		</div>
+	
+
+    
+    
+
+
+
+
+
+	<main class="">
+			
+    
+
+
+			
+
+<div class="column feature moved-up">
+    <div class="ui fluid card video-card"
+         style="border-radius: 0rem !important; box-shadow: 0 0.5px 0.5px 0 #d4d4d5, 0 0 0 0.5px #d4d4d5;">
+</div>
+
+
+<!-- start of Accreditation section -->
+<div class="ui container">
+    <section class="accreditation-section">
+        <div class="ui basic features">
+            <h2 class="ui header">Your Accreditation Application Starts <span style="color: #6F1D46">Here!</span></h2>
+            <div class="ui container">
+                <div class="ui stackable grid">
+                    <div class="ui three column grid" style="display: inline-flex;">
+                        <div class="column mc-feature">
+                            <div class="ui fluid card card-height">
+                                <div class="content">
+                                    <div class="header">
+                                        <img class="left floated mini ui image card-img"
+                                             src="/static/svg/ghc_accreadtion.svg">
+                                    </div>
+                                    <br>
+                                    <div class="left aligned header card-header">
+                                        <p>Wafid Medical Center Accreditation</p>
+                                    </div>
+                                </div>
+                                <div class="extra content card-extra-non-border">
+                                <a class="ui card-btn apply left floated button" href="summary-process.html" type="submit">Apply</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column mc-feature">
+                            <div class="ui fluid card card-height">
+                                <div class="content">
+                                    <div class="header">
+                                        <img class="left floated mini ui image card-img"
+                                             src="/static/svg/accreadition_status_icon.svg">
+                                    </div>
+                                    <br>
+                                    <div class="left aligned header card-header">
+                                        <p>Accreditation status</p>
+                                    </div>
+                                </div>
+                                <div class="extra content card-extra-non-border">
+                                    <a class="ui card-btn left floated button" href="status.html"
+                                       type="submit">Check</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column mc-feature">
+                            <div class="ui fluid card card-height">
+                                <div class="content">
+                                    <div class="header">
+                                        <img class="left floated mini ui image card-img"
+                                             src="/static/svg/membership_cert_icon.svg">
+                                    </div>
+                                    <br>
+                                    <div class="left aligned header card-header">
+                                        <p>Membership Certificate</p>
+                                    </div>
+                                </div>
+                                <div class="extra content card-extra-non-border">
+                                    <a class="ui card-btn left floated button " href="2955certificate-search.html"
+                                       type="submit">Check</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of Accreditation section-->
+
+    <!-- start of guideline section -->
+    <section class="guideline-contact-section">
+    <div class="column feature moved-up">
+        <div class="ui fluid card" style="border-radius: 0rem !important; box-shadow: none !important">
+            <div class="content ">
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev video-arrows"
+                                data-glide-dir="<"
+                                id="glider-prev"
+                                style="right: calc(100% - -15px) !important; top: calc(100% - 210px); !important">
+                            &lt;
+                        </button>
+                    </div>
+
+                    <h2 class="ui header">Guidelines</h2>
+                    <div class="ui stackable two column vertically grid container" style="margin-top: 10px;">
+                        <div class="row">
+                            
+                            
+                            
+                            
+<div class="column">
+	<a class="ui cards" href="/download/vaccination/%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D8%B9%D9%8A%D9%85%D8%A7%D8%AA.pdf">
+		<div class="card gcc-guidelines-card">
+			<div class="content">
+				<div class="description" style="margin-right: 75px !important ;font-size :1.28571429em ; font-weight: 700">
+					الاشتراطات الصحية للتطعيمات
+				</div>
+				<img class="right floated  ui image"
+					 src="/static/svg/download_icon_guide.svg">
+				
+			</div>
+		</div>
+	</a>
+</div>
+
+
+
+                            
+                            
+                            
+                            
+<div class="column">
+	<a class="ui cards" href="/download/regulations_ar/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D9%83%D8%B4%D9%81%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%20%D9%84%D9%84%D9%88%D8%A7%D9%81%D8%AF%D9%8A%D9%86%20%D8%A5%D9%84%D9%89%20%D8%AF%D9%88%D9%84%20%D9%85%D8%AC%D9%84%D8%B3%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%20%D8%A8%D8%BA%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A5%D9%82%D8%A7%D9%85%D8%A9%20.pdf">
+		<div class="card gcc-guidelines-card">
+			<div class="content">
+				<div class="description" style="margin-right: 75px !important ;font-size :1.28571429em ; font-weight: 700">
+					اللائحة التنظيمية للكشف الطبي للوافدين إلى دول مجلس التعاون بغرض العمل أو الإقامة
+				</div>
+				<img class="right floated  ui image"
+					 src="/static/svg/download_icon_guide.svg">
+				
+			</div>
+		</div>
+	</a>
+</div>
+
+
+                        </div>
+                        <div class="row">
+                            
+                            
+                            
+                            
+<div class="column">
+	<a class="ui cards" href="/static/pdf/Regulations%20of%20Medical%20Examination%20of%20Expatriates%20Coming%20to%20GCC%20States%20for%20Work%20or%20Residence.pdf">
+		<div class="card gcc-guidelines-card">
+			<div class="content">
+				<div class="description" style="margin-right: 75px !important ;font-size :1.28571429em ; font-weight: 700">
+					Regulations of Medical Examination of Expatriates Coming to GCC States for Work or Residence
+				</div>
+				<img class="right floated  ui image"
+					 src="/static/svg/download_icon_guide.svg">
+				
+			</div>
+		</div>
+	</a>
+</div>
+
+
+
+                            
+                            
+                            
+                            
+<div class="column">
+	<a class="ui cards" href="/static/pdf/Infection%20Control%20%26%20Medical%20Waste%20Checklists%20Final.pdf">
+		<div class="card gcc-guidelines-card">
+			<div class="content">
+				<div class="description" style="margin-right: 75px !important ;font-size :1.28571429em ; font-weight: 700">
+					Infection Control & Medical Waste Checklists
+				</div>
+				<img class="right floated  ui image"
+					 src="/static/svg/download_icon_guide.svg">
+				
+			</div>
+		</div>
+	</a>
+</div>
+
+
+                        </div>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next video-arrows"
+                                data-glide-dir=">"
+                                id="glider-next"
+                                style="left: calc(100% - -15px) !important; top: calc(100% - 210px); !important">
+                            &gt;
+                        </button>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+
+<!--end of guideline section-->
+
+
+    <!-- start map & contact-us section -->
+    <section class="map-contact-section">
+        <div class="ui vertical segment">
+            <div class="ui equal width stackable internally grid">
+                <div class="center aligned row">
+                    <div class="column">
+                        <div class="ui container content-container contact_us">
+                            <div>
+                                <h2>Contact us</h2>
+                                <div class="text">Kingdom of Saudi Arabia - Riyadh</div>
+                                <div class="text" style="margin-top: 0.5rem;">Diplomatic Quarter - opposite the Saudi</div>
+                                <div class="text" style="margin-top: 0.5rem;">Commission for Health Specialties</div>
+                            </div>
+                            <div style="margin-top: 3rem;">
+                                <div class="contact-us-text">ZIP code 11462 PO Box 7431</div>
+                                <div>Email : <a href="651email-protection.html#34474144445b4640744355525d501a575b59"><span class="__cf_email__" data-cfemail="186b6d6868776a6c586f797e717c367b7775">[email&#160;protected]</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <iframe allowfullscreen=""
+                                height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14502.261507007019!2d46.6255264!3d24.6730842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb41e583e5bbc43f7!2sGulf%20Health%20Council!5e0!3m2!1sen!2ssa!4v1669883040064!5m2!1sen!2ssa"
+                                style="border:0;" width="600"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of map and contact-us section-->
+    
+	</main>
+
+
+
+	<div class="ui vertical basic segment footer">
+		<div class="ui container center aligned">
+            <div class="ui container center aligned">
+                <img class="footer-logo" src="/static/svg/gcc-old-logo-white.svg" alt="gulf health council logo">
+            <div class="social-media-icons" >
+                <a href="https://www.instagram.com/ghc_gcc/channel/?hl=en"><img class="social-media-icons-colors"  src="/static/svg/instagram.svg" alt="instagram"></a>
+                <a href=" https://ar-ar.facebook.com/GHCouncil/"><img class="social-media-icons-colors"  src="/static/svg/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/ghc_gcc"><img class="social-media-icons-colors"  src="/static/svg/twitter.svg" alt="twitter"></a>
+                <a href="https://www.youtube.com/channel/UCrKbHYpmpC_OrAfZ5P_qZXA"><img class="social-media-icons-colors"  src="/static/svg/youtube.svg" alt="youtube"></a>
+            </div>
+			<div class="copyright">
+                <div class="copyright">
+                    <span>@ 2024 </span>
+                    Gulf Health Council. All rights reserved
+                </div>
+			
+		</div>
+	</div>
+
+
+    
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/jsi18n/en/djangojs.js"></script>
+
+    <script src="/static/vendor/jquery.min.js"></script>
+    <script src="/static/vendor/semantic/dist/semantic.min.js"></script>
+    <script src="/static/js/vendor/jquery.inputmask.min.js"></script>
+    <script src="/static/js/vendor/cropper.min.js"></script>
+    <script src="/static/js/vendor/jquery-cropper.min.js"></script>
+    <script src="/static/js/vendor/glide.min.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/table-config.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.ui.dropdown').dropdown();
+        $('.ui.dropdown.item').dropdown({on: 'hover'});
+        $('.ui.checkbox').checkbox();
+        $('.message .close')
+          .on('click', function() {
+            $(this)
+              .closest('.message')
+              .transition('fade');
+          });
+      });
+    </script>
+
+    <!-- start forms and widgets-specific -->
+    <script src="/static/vendor/semantic-ui-calendar/calendar.min.js"></script>
+    <script src="/static/vendor/semantic/dist/components/dropdown.js"></script>
+    <script src="/static/vendor/state-machine/state-machine.min.js"></script>
+    <script src="/static/js/calendar-widget.js"></script>
+    <script src="/static/js/vendor/moment.js"></script>
+    <script src="/static/js/components/single-dropdown-widget.js"></script>
+    <script src="/static/js/components/multiple-dropdown-widget.js"></script>
+    <script src="/static/js/captcha.js"></script>
+    <script src="/static/js/components/file-widget.js"></script>
+    <script src="/static/js/components/number-input-widget.js"></script>
+    <script src="/static/js/components/labeled-select-widget.js"></script>
+    <script src="/static/js/city-country-controls.js"></script>
+
+    <!-- end forms and widgets-specific -->
+
+
+
+	<script>
+    CITIES = JSON.parse('');
+    $('.clock.working-time').popup({
+        on    : 'click',
+        position: 'left center'
+    });
+	</script>
+    
+    
+	    <script src="/static/js/city-country-controls.js"></script>
+        <script src="/static/js/landing.js"></script>
+     
+
+</body>
+</html>
